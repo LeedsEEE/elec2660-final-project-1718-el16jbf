@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58E81FC38D63007AA647 /* MapKit.framework */; };
+		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
 		5786295A1FB1E32100BE1B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629591FB1E32100BE1B86 /* main.m */; };
 		5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295C1FB1E32100BE1B86 /* AppDelegate.m */; };
 		578629601FB1E32100BE1B86 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295F1FB1E32100BE1B86 /* FirstViewController.m */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DB58E81FC38D63007AA647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		578629551FB1E32100BE1B86 /* Project - Pub Crawl Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project - Pub Crawl Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578629591FB1E32100BE1B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5786295B1FB1E32100BE1B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */,
+				03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03DB58E71FC38D63007AA647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */,
+				03DB58E81FC38D63007AA647 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5786294C1FB1E32100BE1B86 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,7 @@
 				578629741FB1E32100BE1B86 /* Project - Pub Crawl TrackerTests */,
 				5786297F1FB1E32100BE1B86 /* Project - Pub Crawl TrackerUITests */,
 				578629561FB1E32100BE1B86 /* Products */,
+				03DB58E71FC38D63007AA647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -513,6 +529,7 @@
 				578629871FB1E32100BE1B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578629881FB1E32100BE1B86 /* Build configuration list for PBXNativeTarget "Project - Pub Crawl TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +538,7 @@
 				5786298A1FB1E32100BE1B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5786298B1FB1E32100BE1B86 /* Build configuration list for PBXNativeTarget "Project - Pub Crawl TrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +547,7 @@
 				5786298D1FB1E32100BE1B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
