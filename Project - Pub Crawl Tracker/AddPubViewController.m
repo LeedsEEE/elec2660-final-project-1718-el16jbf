@@ -26,4 +26,30 @@
 }
 
 
+- (IBAction)pubNameInput:(UITextField *)sender {
+}
+
+- (IBAction)pubStreetInput:(UITextField *)sender {
+}
+
+- (IBAction)pubTownInput:(UITextField *)sender {
+}
+
+- (IBAction)pubCityInput:(UITextField *)sender {
+}
+
+- (IBAction)pubPostcodeInput:(UITextField *)sender {
+}
+
+- (IBAction)pubNumberInput:(UITextField *)sender {
+}
+
+- (IBAction)pubRatingInput:(UITextField *)sender {
+}
+
+- (IBAction)saveButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)CancelButtonPressed:(UIButton *)sender {
+}
 @end

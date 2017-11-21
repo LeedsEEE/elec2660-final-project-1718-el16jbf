@@ -26,4 +26,8 @@
 }
 
 
+- (IBAction)mapTypeControl:(UISegmentedControl *)sender {
+}
+- (IBAction)zoomStepper:(UIStepper *)sender {
+}
 @end

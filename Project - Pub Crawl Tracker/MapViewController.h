@@ -10,6 +10,12 @@
 
 @interface MapViewController : UIViewController
 
+- (IBAction)mapTypeControl:(UISegmentedControl *)sender;
+- (IBAction)zoomStepper:(UIStepper *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *numberOfPubsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *routeLengthLabel;
+
 
 @end
 

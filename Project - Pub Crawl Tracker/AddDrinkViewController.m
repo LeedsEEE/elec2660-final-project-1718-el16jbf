@@ -34,4 +34,18 @@
 }
 */
 
+- (IBAction)drinkNameInput:(UITextField *)sender {
+}
+
+- (IBAction)drinkUnitsInput:(UITextField *)sender {
+}
+
+- (IBAction)drinkCaloriesInput:(UITextField *)sender {
+}
+
+- (IBAction)saveButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)cancelButtonPressed:(UIButton *)sender {
+}
 @end

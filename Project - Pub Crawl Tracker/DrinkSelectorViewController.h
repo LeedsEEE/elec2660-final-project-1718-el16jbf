@@ -10,4 +10,8 @@
 
 @interface DrinkSelectorViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIPickerView *drinkPickerView;
+- (IBAction)saveButtonPressed:(UIButton *)sender;
+- (IBAction)cancelButtonPressed:(UIButton *)sender;
+
 @end
