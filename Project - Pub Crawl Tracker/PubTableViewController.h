@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PubTableViewController : UITableViewController
+@interface PubTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
