@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		034893D41FC440D100BCEAAA /* PubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D31FC440D100BCEAAA /* PubTableViewController.m */; };
 		034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D61FC4414100BCEAAA /* PubDataModel.m */; };
 		034893DA1FC4415D00BCEAAA /* Pub.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D91FC4415D00BCEAAA /* Pub.m */; };
 		034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893DC1FC4418E00BCEAAA /* AddDrinkViewController.m */; };
@@ -16,6 +15,8 @@
 		034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */; };
 		03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58E81FC38D63007AA647 /* MapKit.framework */; };
 		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
+		03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */; };
+		03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03E6D4281FC7302700CD8C49 /* Library logo.jpg */; };
 		5786295A1FB1E32100BE1B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629591FB1E32100BE1B86 /* main.m */; };
 		5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295C1FB1E32100BE1B86 /* AppDelegate.m */; };
 		578629601FB1E32100BE1B86 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295F1FB1E32100BE1B86 /* MapViewController.m */; };
@@ -45,8 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		034893D21FC440D100BCEAAA /* PubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubTableViewController.h; sourceTree = "<group>"; };
-		034893D31FC440D100BCEAAA /* PubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubTableViewController.m; sourceTree = "<group>"; };
 		034893D51FC4414100BCEAAA /* PubDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubDataModel.h; sourceTree = "<group>"; };
 		034893D61FC4414100BCEAAA /* PubDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubDataModel.m; sourceTree = "<group>"; };
 		034893D81FC4415D00BCEAAA /* Pub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pub.h; sourceTree = "<group>"; };
@@ -61,6 +60,9 @@
 		034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkSelectorViewController.m; sourceTree = "<group>"; };
 		03DB58E81FC38D63007AA647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewController.h; sourceTree = "<group>"; };
+		03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewController.m; sourceTree = "<group>"; };
+		03E6D4281FC7302700CD8C49 /* Library logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library logo.jpg"; sourceTree = "<group>"; };
 		578629551FB1E32100BE1B86 /* Project - Pub Crawl Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project - Pub Crawl Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578629591FB1E32100BE1B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5786295B1FB1E32100BE1B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,8 +126,8 @@
 				034893D91FC4415D00BCEAAA /* Pub.m */,
 				034893D51FC4414100BCEAAA /* PubDataModel.h */,
 				034893D61FC4414100BCEAAA /* PubDataModel.m */,
-				034893D21FC440D100BCEAAA /* PubTableViewController.h */,
-				034893D31FC440D100BCEAAA /* PubTableViewController.m */,
+				03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */,
+				03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */,
 				034893DE1FC441CC00BCEAAA /* PubViewController.h */,
 				034893DF1FC441CC00BCEAAA /* PubViewController.m */,
 				578629611FB1E32100BE1B86 /* AddPubViewController.h */,
@@ -156,6 +158,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		03E6D42A1FC7302C00CD8C49 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
 		5786294C1FB1E32100BE1B86 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 			children = (
 				5786295B1FB1E32100BE1B86 /* AppDelegate.h */,
 				5786295C1FB1E32100BE1B86 /* AppDelegate.m */,
+				03E6D42A1FC7302C00CD8C49 /* Pictures */,
 				034893E71FC4425D00BCEAAA /* Map Tab */,
 				034893E81FC442A000BCEAAA /* Pub Tab */,
 				034893E91FC442B100BCEAAA /* Drinks Tab */,
@@ -327,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */,
+				03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
 			);
@@ -360,7 +372,7 @@
 				034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */,
 				034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */,
 				034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */,
-				034893D41FC440D100BCEAAA /* PubTableViewController.m in Sources */,
+				03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */,
 				578629601FB1E32100BE1B86 /* MapViewController.m in Sources */,
 				5786295A1FB1E32100BE1B86 /* main.m in Sources */,
 				034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */,

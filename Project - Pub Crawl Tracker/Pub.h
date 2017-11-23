@@ -17,5 +17,7 @@
 @property (strong, nonatomic) NSString *postcode;
 @property (strong, nonatomic) NSString *phone;
 @property (strong, nonatomic) NSString *rating;
+@property (strong, nonatomic) NSString *picture;
+@property (strong, nonatomic) NSString *logo;
 
 @end

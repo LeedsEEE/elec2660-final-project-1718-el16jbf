@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="813.60000000000002" y="-492.50374812593708"/>
         </scene>
-        <!--Pub Table View Controller-->
+        <!--Table Pub View Controller-->
         <scene sceneID="efY-LG-Zp9">
             <objects>
-                <viewController id="oE3-1e-waR" customClass="PubTableViewController" sceneMemberID="viewController">
+                <viewController id="oE3-1e-waR" customClass="TablePubViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sGJ-MQ-0Xc"/>
                         <viewControllerLayoutGuide type="bottom" id="kO3-Yt-vmB"/>
@@ -86,27 +86,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="15" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-Ql-qU7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-Ql-qU7">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pubCell" textLabel="Cuz-v3-BtS" detailTextLabel="dQx-B9-gSV" rowHeight="15" style="IBUITableViewCellStyleValue2" id="AfI-A5-Xga">
-                                        <rect key="frame" x="0.0" y="92" width="343" height="15"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="Cuz-v3-BtS" detailTextLabel="dQx-B9-gSV" rowHeight="75" style="IBUITableViewCellStyleValue1" id="AfI-A5-Xga">
+                                        <rect key="frame" x="0.0" y="92" width="343" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AfI-A5-Xga" id="zUE-cj-ZSe">
-                                            <frame key="frameInset" width="343" height="14"/>
+                                            <frame key="frameInset" width="310" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cuz-v3-BtS">
-                                                    <frame key="frameInset" minX="15" minY="-1" width="91" height="16"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cuz-v3-BtS">
+                                                    <frame key="frameInset" minX="15" minY="27" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQx-B9-gSV">
-                                                    <frame key="frameInset" minX="112" minY="-1" width="216" height="16"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQx-B9-gSV">
+                                                    <frame key="frameInset" minX="264" minY="27" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -118,8 +118,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="oE3-1e-waR" id="T34-Du-U52"/>
-                                    <outlet property="delegate" destination="oE3-1e-waR" id="QkL-U3-asZ"/>
+                                    <outlet property="dataSource" destination="oE3-1e-waR" id="bvj-DH-XyL"/>
+                                    <outlet property="delegate" destination="oE3-1e-waR" id="IXo-4H-fdQ"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2L-Ac-k7C">
@@ -142,7 +142,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vhy-UG-lgh"/>
                     <connections>
-                        <outlet property="table" destination="ilh-Ql-qU7" id="2fl-0I-N0c"/>
+                        <outlet property="table" destination="ilh-Ql-qU7" id="kET-Qq-FJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="saV-Y5-Gw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +249,6 @@
                             <constraint firstItem="D9c-TO-ocT" firstAttribute="width" secondItem="csf-PQ-l4v" secondAttribute="width" id="UTy-lF-OE4"/>
                             <constraint firstItem="1vg-cQ-JoU" firstAttribute="width" secondItem="D9c-TO-ocT" secondAttribute="width" id="Wvk-1M-PL4"/>
                             <constraint firstItem="xKA-HI-TK1" firstAttribute="top" secondItem="JPZ-jD-P8X" secondAttribute="bottom" constant="30" id="XST-e0-mxA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="twc-B6-dTq" secondAttribute="trailing" constant="223" id="Xeb-vq-NLB"/>
                             <constraint firstItem="HAX-Dv-op7" firstAttribute="width" secondItem="54J-Tr-MaN" secondAttribute="width" id="Y7g-1l-gWS"/>
                             <constraint firstItem="1vg-cQ-JoU" firstAttribute="leading" secondItem="D9c-TO-ocT" secondAttribute="leading" id="b1k-wW-faU"/>
                             <constraint firstItem="csf-PQ-l4v" firstAttribute="top" secondItem="D9c-TO-ocT" secondAttribute="bottom" constant="10" id="ce6-2x-IPM"/>
@@ -751,7 +750,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oE3-1e-waR" kind="relationship" relationship="rootViewController" id="sJu-J6-9LZ"/>
+                        <segue destination="oE3-1e-waR" kind="relationship" relationship="rootViewController" id="cbL-Ol-tM2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRg-mA-LFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
