@@ -6,8 +6,11 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Pub.h"
 
-@interface PubDataModel : UIViewController
+@interface PubDataModel : NSObject
+
+@property (nonatomic, strong) NSMutableArray *pubArray;
 
 @end

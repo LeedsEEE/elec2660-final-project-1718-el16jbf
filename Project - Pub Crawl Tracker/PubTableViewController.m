@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.data = [[PubDataModel alloc]init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,14 +33,14 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {\
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 10;
+    NSInteger numberOfRows;
+    numberOfRows = self.data.pubArray.count;
+    return numberOfRows;
 }
 
 
@@ -47,6 +48,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pubCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    
+    Pub *tempPub = [self.data.pubArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = tempPub.name;
     
     return cell;
 }

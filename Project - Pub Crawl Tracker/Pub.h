@@ -10,4 +10,12 @@
 
 @interface Pub : UIViewController
 
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *street;
+@property (strong, nonatomic) NSString *town;
+@property (strong, nonatomic) NSString *city;
+@property (strong, nonatomic) NSString *postcode;
+@property (strong, nonatomic) NSString *phone;
+@property (strong, nonatomic) NSString *rating;
+
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PubDataModel.h"
+#import "PubViewController.h"
 
 @interface PubTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (strong, nonatomic) PubDataModel *data;
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
