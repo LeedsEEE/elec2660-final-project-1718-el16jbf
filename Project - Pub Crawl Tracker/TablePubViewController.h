@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pub.h"
 #import "PubDataModel.h"
 #import "PubViewController.h"
 #import "TablePubViewCell.h"
