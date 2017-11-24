@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.data = [[PubDataModel alloc] init];
     // Do any additional setup after loading the view.
 }
@@ -45,7 +46,8 @@
     Pub *TempPub = [self.data.pubArray objectAtIndex:indexPath.row];
     cell.cellImage.image = [UIImage imageNamed:TempPub.logo];
     cell.nameLabel.text = TempPub.name;
-    cell.cellSwitchOutlet.on = false;
+    cell.cellSwitchOutlet.on = TempPub.include;
+    cell.cellSwitchOutlet.tag = indexPath.row;
     
     return cell;
 }
@@ -65,5 +67,13 @@ if([[segue identifier] isEqualToString:@"ShowPubDetails"])  {
     Pub *tempPub = [self.data.pubArray objectAtIndex:indexPath.row];
     destinationViewController.pub = tempPub;
 }
+}
+- (IBAction)SwitchChanged:(UISwitch *)sender {
+    
+    NSLog(@"%ld", sender.tag);\
+    if(sender.on == true){
+        
+    }
+    
 }
 @end

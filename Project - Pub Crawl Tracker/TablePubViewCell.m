@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.data = [[PubDataModel alloc] init];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -22,6 +23,8 @@
 }
 
 - (IBAction)cellSwitchChanged:(UISwitch *)sender {
-    
+ //   if(sender.on == true){
+      //  [self.data.pubArray objectAtIndex:indexPath.row];
+ //   }
 }
 @end

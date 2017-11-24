@@ -120,7 +120,7 @@
                                                     <frame key="frameInset" minX="293" minY="22" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
-                                                        <action selector="cellSwitchChanged:" destination="AfI-A5-Xga" eventType="valueChanged" id="FYs-jr-jaX"/>
+                                                        <action selector="SwitchChanged:" destination="oE3-1e-waR" eventType="valueChanged" id="NIl-bQ-bnG"/>
                                                     </connections>
                                                 </switch>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiB-4X-UDd">

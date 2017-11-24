@@ -13,6 +13,7 @@
 
 @interface TablePubViewController : UIViewController
 
+- (IBAction)SwitchChanged:(UISwitch *)sender;
 @property (nonatomic, strong) PubDataModel *data;
 
 @end

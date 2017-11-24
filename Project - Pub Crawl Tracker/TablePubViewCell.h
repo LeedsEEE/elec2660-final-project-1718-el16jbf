@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pub.h"
+#import "PubDataModel.h"
+#import "TablePubViewController.h"
 
 @interface TablePubViewCell : UITableViewCell
-- (IBAction)cellSwitchChanged:(UISwitch *)sender;
+
+@property (nonatomic, strong) PubDataModel *data;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cellImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

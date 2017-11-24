@@ -27,6 +27,7 @@
         library.rating = @"4.1";
         library.picture = @"Library Picture.jpg";
         library.logo = @"Library logo.jpg";
+        library.include = false;
         
         [self.pubArray addObject:library]; //index 0
     }
