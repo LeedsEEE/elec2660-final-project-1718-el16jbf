@@ -7,6 +7,7 @@
 //
 
 #import "PubViewController.h"
+#import "PubDataModel.h"
 
 @interface PubViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.pubNameLabel.text = self.pub.name;
+    self.pubStreetLabel.text = self.pub.street;
+    self.pubTownLabel.text = self.pub.town;
+    self.pubCityLabel.text = self.pub.city;
+    self.pubPostcodeLabel.text = self.pub.postcode;
+    self.pubPhoneLabel.text = self.pub.phone;
+    self.pubRatingLabel.text = self.pub.rating;
+    self.pubImageView.image = [UIImage imageNamed:_pub.picture];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "PubDataModel.h"
+#import "PubViewController.h"
+#import "TablePubViewCell.h"
 
 @interface TablePubViewController : UIViewController
 

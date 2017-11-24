@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pub.h"
 
 @interface PubViewController : UIViewController
 
@@ -19,4 +20,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *pubRatingLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *pubImageView;
 
+@property (strong, nonatomic) Pub *pub;
 @end

@@ -13,6 +13,8 @@
 		034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893DF1FC441CC00BCEAAA /* PubViewController.m */; };
 		034893E31FC4422400BCEAAA /* DrinksConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */; };
 		034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */; };
+		034896381FC858F40071B10E /* Library Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 034896371FC858F40071B10E /* Library Picture.jpg */; };
+		0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0348963A1FC85C750071B10E /* TablePubViewCell.m */; };
 		03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58E81FC38D63007AA647 /* MapKit.framework */; };
 		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
 		03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */; };
@@ -58,6 +60,9 @@
 		034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksConsumptionViewController.m; sourceTree = "<group>"; };
 		034893E41FC4423700BCEAAA /* DrinkSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkSelectorViewController.h; sourceTree = "<group>"; };
 		034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkSelectorViewController.m; sourceTree = "<group>"; };
+		034896371FC858F40071B10E /* Library Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library Picture.jpg"; sourceTree = "<group>"; };
+		034896391FC85C750071B10E /* TablePubViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewCell.h; sourceTree = "<group>"; };
+		0348963A1FC85C750071B10E /* TablePubViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewCell.m; sourceTree = "<group>"; };
 		03DB58E81FC38D63007AA647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewController.h; sourceTree = "<group>"; };
@@ -128,6 +133,8 @@
 				034893D61FC4414100BCEAAA /* PubDataModel.m */,
 				03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */,
 				03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */,
+				034896391FC85C750071B10E /* TablePubViewCell.h */,
+				0348963A1FC85C750071B10E /* TablePubViewCell.m */,
 				034893DE1FC441CC00BCEAAA /* PubViewController.h */,
 				034893DF1FC441CC00BCEAAA /* PubViewController.m */,
 				578629611FB1E32100BE1B86 /* AddPubViewController.h */,
@@ -162,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
+				034896371FC858F40071B10E /* Library Picture.jpg */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 			files = (
 				5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */,
 				03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */,
+				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
 			);
@@ -376,6 +385,7 @@
 				578629601FB1E32100BE1B86 /* MapViewController.m in Sources */,
 				5786295A1FB1E32100BE1B86 /* main.m in Sources */,
 				034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */,
+				0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
