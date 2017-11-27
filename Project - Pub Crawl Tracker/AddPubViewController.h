@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PubEntity+Add.h"
 
 @interface AddPubViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *PubNameField;
+@property (weak, nonatomic) IBOutlet UITextField *PubStreetField;
+@property (weak, nonatomic) IBOutlet UITextField *PubTownField;
+@property (weak, nonatomic) IBOutlet UITextField *PubCityField;
+@property (weak, nonatomic) IBOutlet UITextField *PubPostcodeField;
+@property (weak, nonatomic) IBOutlet UITextField *PubPhoneNumberField;
+@property (weak, nonatomic) IBOutlet UITextField *PubRatingField;
 
 - (IBAction)pubNameInput:(UITextField *)sender;
 - (IBAction)pubStreetInput:(UITextField *)sender;

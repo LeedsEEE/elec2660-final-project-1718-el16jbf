@@ -28,6 +28,12 @@
 		5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578629691FB1E32100BE1B86 /* LaunchScreen.storyboard */; };
 		578629761FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629751FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerTests.m */; };
 		578629811FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629801FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerUITests.m */; };
+		57EF78ED1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57EF78EB1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld */; };
+		57EF78EF1FCC88B70006E004 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EF78EE1FCC88B70006E004 /* CoreData.framework */; };
+		57EF78F11FCC8A630006E004 /* Hyde Park Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */; };
+		57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */; };
+		57EF79051FCC955F0006E004 /* PubEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF79041FCC955F0006E004 /* PubEntity.m */; };
+		57EF79081FCC99E30006E004 /* PubEntity+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF79071FCC99E30006E004 /* PubEntity+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,15 @@
 		5786297C1FB1E32100BE1B86 /* Project - Pub Crawl TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project - Pub Crawl TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578629801FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Project___Pub_Crawl_TrackerUITests.m"; sourceTree = "<group>"; };
 		578629821FB1E32100BE1B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57EF78EC1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Project - Pub Crawl Tracker.xcdatamodel"; sourceTree = "<group>"; };
+		57EF78EE1FCC88B70006E004 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hyde Park Logo.jpg"; sourceTree = "<group>"; };
+		57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hyde Park Picture.jpg"; sourceTree = "<group>"; };
+		57EF78F41FCC91B80006E004 /* Project - Pub Crawl Tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project - Pub Crawl Tracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		57EF79031FCC955F0006E004 /* PubEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubEntity.h; sourceTree = "<group>"; };
+		57EF79041FCC955F0006E004 /* PubEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubEntity.m; sourceTree = "<group>"; };
+		57EF79061FCC99E30006E004 /* PubEntity+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PubEntity+Add.h"; sourceTree = "<group>"; };
+		57EF79071FCC99E30006E004 /* PubEntity+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PubEntity+Add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EF78EF1FCC88B70006E004 /* CoreData.framework in Frameworks */,
 				03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */,
 				03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */,
 			);
@@ -139,6 +155,10 @@
 				034893DF1FC441CC00BCEAAA /* PubViewController.m */,
 				578629611FB1E32100BE1B86 /* AddPubViewController.h */,
 				578629621FB1E32100BE1B86 /* AddPubViewController.m */,
+				57EF79031FCC955F0006E004 /* PubEntity.h */,
+				57EF79041FCC955F0006E004 /* PubEntity.m */,
+				57EF79061FCC99E30006E004 /* PubEntity+Add.h */,
+				57EF79071FCC99E30006E004 /* PubEntity+Add.m */,
 			);
 			name = "Pub Tab";
 			sourceTree = "<group>";
@@ -159,6 +179,7 @@
 		03DB58E71FC38D63007AA647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57EF78EE1FCC88B70006E004 /* CoreData.framework */,
 				03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */,
 				03DB58E81FC38D63007AA647 /* MapKit.framework */,
 			);
@@ -170,6 +191,8 @@
 			children = (
 				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
 				034896371FC858F40071B10E /* Library Picture.jpg */,
+				57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */,
+				57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -182,6 +205,7 @@
 				5786297F1FB1E32100BE1B86 /* Project - Pub Crawl TrackerUITests */,
 				578629561FB1E32100BE1B86 /* Products */,
 				03DB58E71FC38D63007AA647 /* Frameworks */,
+				57EF78F41FCC91B80006E004 /* Project - Pub Crawl Tracker-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +232,7 @@
 				578629671FB1E32100BE1B86 /* Assets.xcassets */,
 				578629691FB1E32100BE1B86 /* LaunchScreen.storyboard */,
 				5786296C1FB1E32100BE1B86 /* Info.plist */,
+				57EF78EB1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld */,
 				578629581FB1E32100BE1B86 /* Supporting Files */,
 			);
 			path = "Project - Pub Crawl Tracker";
@@ -306,6 +331,7 @@
 				TargetAttributes = {
 					578629541FB1E32100BE1B86 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					578629701FB1E32100BE1B86 = {
@@ -347,7 +373,9 @@
 			files = (
 				5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */,
 				03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */,
+				57EF78F11FCC8A630006E004 /* Hyde Park Logo.jpg in Resources */,
 				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
+				57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
 			);
@@ -378,14 +406,17 @@
 				034893DA1FC4415D00BCEAAA /* Pub.m in Sources */,
 				5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */,
 				034893E31FC4422400BCEAAA /* DrinksConsumptionViewController.m in Sources */,
+				57EF79051FCC955F0006E004 /* PubEntity.m in Sources */,
 				034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */,
 				034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */,
 				034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */,
 				03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */,
+				57EF79081FCC99E30006E004 /* PubEntity+Add.m in Sources */,
 				578629601FB1E32100BE1B86 /* MapViewController.m in Sources */,
 				5786295A1FB1E32100BE1B86 /* main.m in Sources */,
 				034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */,
 				0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */,
+				57EF78ED1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,10 +565,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Project - Pub Crawl Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Project---Pub-Crawl-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project - Pub Crawl Tracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -545,10 +580,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Project - Pub Crawl Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Project---Pub-Crawl-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project - Pub Crawl Tracker-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -638,6 +676,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57EF78EB1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57EF78EC1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodel */,
+			);
+			currentVersion = 57EF78EC1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodel */;
+			path = "Project - Pub Crawl Tracker.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5786294D1FB1E32100BE1B86 /* Project object */;
 }

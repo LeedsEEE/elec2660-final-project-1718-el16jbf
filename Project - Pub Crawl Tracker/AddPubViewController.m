@@ -47,7 +47,10 @@
 - (IBAction)pubRatingInput:(UITextField *)sender {
 }
 
+
 - (IBAction)saveButtonPressed:(UIButton *)sender {
+    NSDictionary *pubInfo = @{@"name": self.PubNameField.text, @"street":self.PubStreetField.text, @"town": self.PubTownField.text, @"city":self.PubCityField.text, @"postcode":self.PubPostcodeField.text, @"phoneNumber":self.PubPhoneNumberField.text, @"rating":_PubRatingField.text};
+    [PubEntity addPubInfoFromDictionary:pubInfo];
 }
 
 - (IBAction)CancelButtonPressed:(UIButton *)sender {

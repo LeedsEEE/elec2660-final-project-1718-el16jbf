@@ -29,7 +29,20 @@
         library.logo = @"Library logo.jpg";
         library.include = false;
         
+        Pub *hyde = [[Pub alloc] init];
+        hyde.name = @"The Hyde Park Pub";
+        hyde.street = @"2 Headingly Lane";
+        hyde.town = @"Leeds";
+        hyde.city = @"Leeds";
+        hyde.postcode = @"LS6 2AS";
+        hyde.phone = @"01132745597";
+        hyde.rating = @"3.5";
+        hyde.picture = @"Hyde Park Picture.jpg";
+        hyde.logo = @"Hyde Park logo.jpg";
+        hyde.include = false;
+        
         [self.pubArray addObject:library]; //index 0
+        [self.pubArray addObject:hyde]; //index 1
     }
     return self;
 }
