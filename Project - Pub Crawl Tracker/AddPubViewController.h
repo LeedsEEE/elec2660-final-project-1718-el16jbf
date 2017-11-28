@@ -17,14 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *PubPostcodeField;
 @property (weak, nonatomic) IBOutlet UITextField *PubPhoneNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *PubRatingField;
-
-- (IBAction)pubNameInput:(UITextField *)sender;
-- (IBAction)pubStreetInput:(UITextField *)sender;
-- (IBAction)pubTownInput:(UITextField *)sender;
-- (IBAction)pubCityInput:(UITextField *)sender;
-- (IBAction)pubPostcodeInput:(UITextField *)sender;
-- (IBAction)pubNumberInput:(UITextField *)sender;
-- (IBAction)pubRatingInput:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UITextView *dataOutputField;
 
 - (IBAction)saveButtonPressed:(UIButton *)sender;
 - (IBAction)CancelButtonPressed:(UIButton *)sender;

@@ -11,10 +11,12 @@
 #import "PubDataModel.h"
 #import "PubViewController.h"
 #import "TablePubViewCell.h"
+#import "PubEntity+Add.h"
 
 @interface TablePubViewController : UIViewController
 
 - (IBAction)SwitchChanged:(UISwitch *)sender;
 @property (nonatomic, strong) PubDataModel *data;
+@property (nonatomic, strong) PubEntity *pubData;
 
 @end

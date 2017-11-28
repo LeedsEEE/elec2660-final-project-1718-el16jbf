@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -107,10 +107,10 @@
                                 </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="AfI-A5-Xga" customClass="TablePubViewCell">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="68" width="1000" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AfI-A5-Xga" id="zUE-cj-ZSe">
-                                            <frame key="frameInset" width="342" height="74"/>
+                                            <frame key="frameInset" width="818" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTq-wx-xrd">
@@ -363,49 +363,31 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubStreetInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="yPV-03-rK9"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kta-78-a4A">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubTownInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="Md8-Df-B9E"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x4Q-ha-Kh1">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubCityInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="gH2-YY-qb9"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4O-nx-bLG">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubPostcodeInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="eik-no-VR6"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0j-4f-v7v">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubNumberInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="eb8-1T-3jx"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNR-cm-exe">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubRatingInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="L6q-Yd-Dfo"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCs-gB-cwn">
                                 <constraints>
@@ -432,15 +414,17 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="pubNameInput:" destination="Tjw-tO-VCZ" eventType="editingDidEnd" id="2rW-PY-oNa"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pub Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuF-QM-HHy">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="output" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4AG-7v-Rtr">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -455,7 +439,9 @@
                             <constraint firstItem="x4Q-ha-Kh1" firstAttribute="height" secondItem="cUW-zT-1sD" secondAttribute="height" id="9wO-qq-KBy"/>
                             <constraint firstItem="D0j-4f-v7v" firstAttribute="width" secondItem="B4O-nx-bLG" secondAttribute="width" id="Aib-BS-Rgm"/>
                             <constraint firstItem="tUQ-Nv-lw3" firstAttribute="height" secondItem="mTA-DV-hWR" secondAttribute="height" id="BmW-if-TKf"/>
+                            <constraint firstItem="4AG-7v-Rtr" firstAttribute="leading" secondItem="RQe-Rq-t1u" secondAttribute="leadingMargin" constant="10" id="CS9-LL-0Zv"/>
                             <constraint firstItem="mTA-DV-hWR" firstAttribute="top" secondItem="zUt-1k-fr4" secondAttribute="bottom" constant="10" id="EH5-TB-oMd"/>
+                            <constraint firstItem="mOV-oW-dFA" firstAttribute="top" secondItem="4AG-7v-Rtr" secondAttribute="bottom" constant="20" id="Ecd-sR-I7l"/>
                             <constraint firstItem="D0j-4f-v7v" firstAttribute="leading" secondItem="LNR-cm-exe" secondAttribute="leading" id="GNM-uE-djP"/>
                             <constraint firstItem="x4Q-ha-Kh1" firstAttribute="width" secondItem="cUW-zT-1sD" secondAttribute="width" id="GNu-ba-qZf"/>
                             <constraint firstItem="FN6-ve-Tvu" firstAttribute="top" secondItem="eft-QG-hho" secondAttribute="bottom" constant="10" id="Ib9-QV-zKs"/>
@@ -494,18 +480,20 @@
                             <constraint firstItem="XuF-QM-HHy" firstAttribute="leading" secondItem="zUt-1k-fr4" secondAttribute="leading" id="jTO-h8-uBG"/>
                             <constraint firstItem="B4O-nx-bLG" firstAttribute="top" secondItem="hdg-bf-fty" secondAttribute="top" id="kMF-QU-zIT"/>
                             <constraint firstItem="zUt-1k-fr4" firstAttribute="leading" secondItem="mTA-DV-hWR" secondAttribute="leading" id="kSD-K0-tvg"/>
+                            <constraint firstItem="4AG-7v-Rtr" firstAttribute="top" secondItem="LNR-cm-exe" secondAttribute="bottom" constant="20" id="mzO-Hb-gHK"/>
                             <constraint firstItem="eft-QG-hho" firstAttribute="top" secondItem="hdg-bf-fty" secondAttribute="bottom" constant="10" id="nbc-Ya-vWm"/>
                             <constraint firstItem="hdg-bf-fty" firstAttribute="leading" secondItem="eft-QG-hho" secondAttribute="leading" id="o7Y-wq-KpC"/>
                             <constraint firstItem="rGD-Tk-ApZ" firstAttribute="centerX" secondItem="RQe-Rq-t1u" secondAttribute="centerX" id="oZe-Zv-sZk"/>
                             <constraint firstItem="FN6-ve-Tvu" firstAttribute="width" secondItem="eft-QG-hho" secondAttribute="width" id="qm8-m2-n1R"/>
                             <constraint firstItem="lgM-oB-fWc" firstAttribute="leading" secondItem="cUW-zT-1sD" secondAttribute="leading" id="rkJ-ZM-aFK"/>
-                            <constraint firstItem="rGD-Tk-ApZ" firstAttribute="top" secondItem="FQP-6U-nwp" secondAttribute="bottom" constant="40" id="s4z-zv-WCW"/>
+                            <constraint firstItem="rGD-Tk-ApZ" firstAttribute="top" secondItem="FQP-6U-nwp" secondAttribute="bottom" constant="20" id="s4z-zv-WCW"/>
+                            <constraint firstItem="4AG-7v-Rtr" firstAttribute="centerX" secondItem="RQe-Rq-t1u" secondAttribute="centerX" id="sDB-Lm-uAc"/>
                             <constraint firstItem="B4O-nx-bLG" firstAttribute="width" secondItem="x4Q-ha-Kh1" secondAttribute="width" id="vLX-8x-agZ"/>
                             <constraint firstItem="cUW-zT-1sD" firstAttribute="leading" secondItem="Kta-78-a4A" secondAttribute="leading" id="vMy-lW-z0D"/>
                             <constraint firstItem="lgM-oB-fWc" firstAttribute="width" secondItem="cUW-zT-1sD" secondAttribute="width" id="wGd-yk-Vto"/>
                             <constraint firstItem="x4Q-ha-Kh1" firstAttribute="width" secondItem="Kta-78-a4A" secondAttribute="width" id="xRN-PM-v4S"/>
                             <constraint firstItem="cUW-zT-1sD" firstAttribute="height" secondItem="zUt-1k-fr4" secondAttribute="height" id="yDh-GU-YZC"/>
-                            <constraint firstItem="XuF-QM-HHy" firstAttribute="top" secondItem="rGD-Tk-ApZ" secondAttribute="bottom" constant="80" id="yF4-4I-trm"/>
+                            <constraint firstItem="XuF-QM-HHy" firstAttribute="top" secondItem="rGD-Tk-ApZ" secondAttribute="bottom" constant="30" id="yF4-4I-trm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cUW-zT-1sD" secondAttribute="trailing" constant="30" id="yMm-NE-bJc"/>
                             <constraint firstItem="fCs-gB-cwn" firstAttribute="height" secondItem="mOV-oW-dFA" secondAttribute="height" id="ySg-VT-v1o"/>
                         </constraints>
@@ -518,6 +506,7 @@
                         <outlet property="PubRatingField" destination="LNR-cm-exe" id="Vse-qz-vm1"/>
                         <outlet property="PubStreetField" destination="cUW-zT-1sD" id="BAA-9q-W6C"/>
                         <outlet property="PubTownField" destination="Kta-78-a4A" id="aP5-fU-NNd"/>
+                        <outlet property="dataOutputField" destination="4AG-7v-Rtr" id="dmu-ZT-4mH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhm-N6-Iw2" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -23,6 +23,7 @@
     
     
     self.data = [[PubDataModel alloc] init];
+    self.pubData = [[PubEntity alloc] init];
     // Do any additional setup after loading the view.
 }
 
@@ -31,9 +32,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+{
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     NSInteger numberOfRows;
-    numberOfRows = _data.pubArray.count;
+    if (section ==0) {
+        numberOfRows = _data.pubArray.count;
+    } else if (section ==1) {
+        numberOfRows = 0;
+    }
     return numberOfRows;
 }
 

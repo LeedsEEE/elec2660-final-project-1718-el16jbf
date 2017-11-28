@@ -18,16 +18,32 @@
     
     PubEntity *pubEntity = nil;
     
-    //Create new object
-    pubEntity = [NSEntityDescription insertNewObjectForEntityForName:@"PubEntity" inManagedObjectContext:context];
+    NSString *postcode = pubInfo[@"postcode"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"PubsEntity"];
+    request.predicate = [NSPredicate predicateWithFormat:@"postcode =%@", postcode];
     
-    pubEntity.name = [pubInfo valueForKey:@"name"];
-    pubEntity.street = [pubInfo valueForKey:@"street"];
-    pubEntity.town = [pubInfo valueForKey:@"town"];
-    pubEntity.city = [pubInfo valueForKey:@"city"];
-    pubEntity.postcode = [pubInfo valueForKey:@"postcode"];
-    pubEntity.phoneNumber = [pubInfo valueForKey:@"phoneNumber"];
-    pubEntity.rating = [pubInfo valueForKey:@"rating"];
+    NSError *error;
+    NSArray *matches = [context executeFetchRequest:request error:&error];
+    
+    if(!matches || error || ([matches count] >1)) {
+        //do error code
+    } else if ([matches count]) {
+        pubEntity = [matches firstObject];
+    }
+    else {
+        //Create new object
+        pubEntity = [NSEntityDescription insertNewObjectForEntityForName:@"PubsEntity" inManagedObjectContext:context];
+        
+        pubEntity.name = [pubInfo valueForKey:@"name"];
+        pubEntity.street = [pubInfo valueForKey:@"street"];
+        pubEntity.town = [pubInfo valueForKey:@"town"];
+        pubEntity.city = [pubInfo valueForKey:@"city"];
+        pubEntity.postcode = [pubInfo valueForKey:@"postcode"];
+        pubEntity.phoneNumber = [pubInfo valueForKey:@"phoneNumber"];
+        pubEntity.rating = [pubInfo valueForKey:@"rating"];
+    }
+    
+   
     
     return pubEntity;
 }

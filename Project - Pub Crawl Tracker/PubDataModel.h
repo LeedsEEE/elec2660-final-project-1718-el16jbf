@@ -12,5 +12,6 @@
 @interface PubDataModel : NSObject
 
 @property (nonatomic, strong) NSMutableArray *pubArray;
+@property (nonatomic, strong) NSMutableArray *userAddedPubsArray;
 
 @end
