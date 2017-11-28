@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Pub.h"
+#import "PubDataModel.h"
 
 @interface PubViewController : UIViewController
 

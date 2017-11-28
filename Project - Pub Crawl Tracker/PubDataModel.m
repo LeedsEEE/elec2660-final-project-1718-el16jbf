@@ -43,8 +43,6 @@
         
         [self.pubArray addObject:library]; //index 0
         [self.pubArray addObject:hyde]; //index 1
-        
-        self.userAddedPubsArray = [NSMutableArray array];
 
     }
     return self;

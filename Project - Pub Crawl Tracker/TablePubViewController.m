@@ -23,7 +23,7 @@
     
     
     self.data = [[PubDataModel alloc] init];
-    self.pubData = [[PubEntity alloc] init];
+    //self.userData = [[PubEntity alloc] init];
     // Do any additional setup after loading the view.
 }
 
@@ -42,7 +42,10 @@
     if (section ==0) {
         numberOfRows = _data.pubArray.count;
     } else if (section ==1) {
-        numberOfRows = 0;
+        // code to count number of item in user added
+       // NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
+       // userPubsArray = [self.userData valueForKey:@"name"];
+        numberOfRows = 1;//[userPubsArray count];
     }
     return numberOfRows;
 }
@@ -53,11 +56,17 @@
     static NSString *cellid = @"cell";
     TablePubViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
     
-    Pub *TempPub = [self.data.pubArray objectAtIndex:indexPath.row];
-    cell.cellImage.image = [UIImage imageNamed:TempPub.logo];
-    cell.nameLabel.text = TempPub.name;
-    cell.cellSwitchOutlet.on = TempPub.include;
-    cell.cellSwitchOutlet.tag = indexPath.row;
+    if (indexPath.section == 0){
+        Pub *TempPub = [self.data.pubArray objectAtIndex:indexPath.row];
+        cell.cellImage.image = [UIImage imageNamed:TempPub.logo];
+        cell.nameLabel.text = TempPub.name;
+        cell.cellSwitchOutlet.on = TempPub.include;
+        cell.cellSwitchOutlet.tag = indexPath.row;
+    } else if (indexPath.section == 1){
+        // enter details for user added pubs
+       // NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
+      //  userPubsArray = [self.pubData valueForKey:@"name"];
+    }
     
     return cell;
 }

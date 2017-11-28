@@ -17,6 +17,6 @@
 
 - (IBAction)SwitchChanged:(UISwitch *)sender;
 @property (nonatomic, strong) PubDataModel *data;
-@property (nonatomic, strong) PubEntity *pubData;
+//@property (nonatomic, strong) PubEntity *userData;
 
 @end

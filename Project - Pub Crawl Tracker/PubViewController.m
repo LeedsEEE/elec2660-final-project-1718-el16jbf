@@ -7,7 +7,6 @@
 //
 
 #import "PubViewController.h"
-#import "PubDataModel.h"
 
 @interface PubViewController ()
 

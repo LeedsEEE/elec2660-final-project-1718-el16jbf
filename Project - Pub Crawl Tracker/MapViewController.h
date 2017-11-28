@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController
-
-- (IBAction)mapTypeControl:(UISegmentedControl *)sender;
-- (IBAction)zoomStepper:(UIStepper *)sender;
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *numberOfPubsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *routeLengthLabel;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) CLLocationManager *location;
 
+- (IBAction)mapTypeControl:(UISegmentedControl *)sender;
+- (IBAction)zoomStepper:(UIStepper *)sender;
 
 @end
 

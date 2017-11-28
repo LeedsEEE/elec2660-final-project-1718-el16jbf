@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.location = [[CLLocationManager alloc] init];
+    
+    self.mapView.delegate = self;
+    self.location.delegate = self;
+    
+    [self.location requestWhenInUseAuthorization];
 }
 
 
