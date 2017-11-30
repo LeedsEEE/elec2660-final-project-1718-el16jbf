@@ -12,7 +12,7 @@
 
 @end
 
-@implementation MapViewController
+@implementation MapViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +23,14 @@
     self.mapView.delegate = self;
     self.location.delegate = self;
     
+    [self.mapView setShowsUserLocation:YES];
+    
     [self.location requestWhenInUseAuthorization];
+    
+    CLLocation *currentLocation = self.location.location;
+    CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
+    
+    self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.05, 0.05));
 }
 
 

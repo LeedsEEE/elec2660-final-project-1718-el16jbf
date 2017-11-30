@@ -231,7 +231,6 @@
 				578629641FB1E32100BE1B86 /* Main.storyboard */,
 				578629671FB1E32100BE1B86 /* Assets.xcassets */,
 				578629691FB1E32100BE1B86 /* LaunchScreen.storyboard */,
-				5786296C1FB1E32100BE1B86 /* Info.plist */,
 				57EF78EB1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld */,
 				578629581FB1E32100BE1B86 /* Supporting Files */,
 			);
@@ -242,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				578629591FB1E32100BE1B86 /* main.m */,
+				5786296C1FB1E32100BE1B86 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
