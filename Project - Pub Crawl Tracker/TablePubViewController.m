@@ -89,16 +89,16 @@ if([[segue identifier] isEqualToString:@"ShowPubDetails"])  {
 }
 - (IBAction)SwitchChanged:(UISwitch *)sender {
     
-    NSLog(@"%ld", sender.tag);\
+    NSLog(@"%ld", sender.tag);
     Pub *temp = [self.data.pubArray objectAtIndex:sender.tag];
     if(sender.on == true){
         temp.include = true;
         [self.data.pubArray replaceObjectAtIndex:sender.tag withObject:temp];
-        NSLog(@"true");
+        NSLog(@"%hhu",temp.include);
     } else {
         temp.include = false;
         [self.data.pubArray replaceObjectAtIndex:sender.tag withObject:temp];
-        NSLog(@"false");
+        NSLog(@"%hhu",temp.include);
         
     }
     

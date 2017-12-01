@@ -19,6 +19,8 @@
 @property (strong, nonatomic) NSString *rating;
 @property (strong, nonatomic) NSString *picture;
 @property (strong, nonatomic) NSString *logo;
+@property double latitude;
+@property double longitude;
 @property Boolean include;
 
 @end

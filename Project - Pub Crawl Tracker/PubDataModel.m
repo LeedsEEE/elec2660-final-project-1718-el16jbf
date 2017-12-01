@@ -27,6 +27,8 @@
         library.rating = @"4.1";
         library.picture = @"Library Picture.jpg";
         library.logo = @"Library logo.jpg";
+        library.latitude = 53.810657558956166;
+        library.longitude = -1.5569058365234696;
         library.include = false;
         
         Pub *hyde = [[Pub alloc] init];
@@ -39,7 +41,9 @@
         hyde.rating = @"3.5";
         hyde.picture = @"Hyde Park Picture.jpg";
         hyde.logo = @"Hyde Park logo.jpg";
-        hyde.include = false;
+        hyde.latitude = 53.814942900313696;
+        hyde.longitude = -1.5615661746868454;
+        hyde.include = true;
         
         [self.pubArray addObject:library]; //index 0
         [self.pubArray addObject:hyde]; //index 1

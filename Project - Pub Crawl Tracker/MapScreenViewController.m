@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.data = [[PubDataModel alloc] init];
     
     self.location = [[CLLocationManager alloc] init];
     
@@ -29,7 +30,13 @@
     //CLLocation *currentLocation = self.location.location;
     //CLLocationCoordinate2D coordinates = currentLocation.coordinate;
     self.spanValue = 0.014;
+    
+   [self PlotAnnotations];
                                                  
+}
+- (void) viewWillAppear:(BOOL)animated{
+    [self PlotAnnotations];
+    [self ReloadInputViews];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,6 +80,33 @@
     NSLog(@"User Location = %f, %f", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
     MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(self.spanValue, self.spanValue));
     [self.mapView setRegion:region animated:YES];
+}
+
+-(void) PlotAnnotations {
+    
+    for (int i = 0; i < self.data.pubArray.count; i++) {
+        
+        Pub *temp = [self.data.pubArray objectAtIndex:i];
+        NSLog(@"Pub Located: %@",temp.name);
+        
+        CLLocationCoordinate2D pubCoordinates;
+        if (temp.include == true) {
+            pubCoordinates = CLLocationCoordinate2DMake(temp.latitude, temp.longitude);
+            
+            MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init];
+            pointAnnotation.coordinate = pubCoordinates;
+            
+            [self.mapView addAnnotation:pointAnnotation];
+        }
+        
+    }
+    
+}
+-(void) ReloadInputViews{
+    [self.mapView reloadInputViews];
+    
+    
+    
 }
 
 @end
