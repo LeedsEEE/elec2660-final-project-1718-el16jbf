@@ -25,11 +25,13 @@
     
     self.mapView.showsUserLocation = YES;
     
+    [self.mapView showsUserLocation];
     [self.location requestWhenInUseAuthorization];
     
     CLLocation *currentLocation = self.location.location;
     CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
     
+    _spanValue = 0.024;
     self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.024, 0.024));
 }
 
