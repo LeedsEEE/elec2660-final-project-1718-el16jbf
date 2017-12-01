@@ -16,6 +16,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *routeLengthLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;
+@property(nonatomic) BOOL showsZoomControls;
+//@property(nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible;
+//@property(nonatomic) BOOL showsUserLocation;
+@property double stepperValue;
+@property double spanValue;
 
 - (IBAction)mapTypeControl:(UISegmentedControl *)sender;
 - (IBAction)zoomStepper:(UIStepper *)sender;

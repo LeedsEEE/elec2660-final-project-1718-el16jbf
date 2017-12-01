@@ -23,16 +23,15 @@
     self.mapView.delegate = self;
     self.location.delegate = self;
     
-    [self.mapView setShowsUserLocation:YES];
+    self.mapView.showsUserLocation = YES;
     
     [self.location requestWhenInUseAuthorization];
     
     CLLocation *currentLocation = self.location.location;
     CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
     
-    self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.05, 0.05));
+    self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(0.024, 0.024));
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,7 +40,26 @@
 
 
 - (IBAction)mapTypeControl:(UISegmentedControl *)sender {
+   /* typedef enum MKMapType : NSUInteger {
+        MKMapTypeStandard = 0,
+        MKMapTypeSatellite,
+        MKMapTypeHybrid,
+        MKMapTypeSatelliteFlyover, 
+        MKMapTypeHybridFlyover
+    }MKMapType; */
+   if (sender.selectedSegmentIndex == 0) {
+        self.mapView.mapType = MKMapTypeStandard;
+    } else if (sender.selectedSegmentIndex == 1) {
+       self.mapView.mapType = MKMapTypeSatellite;
+    }else if (sender.selectedSegmentIndex == 2) {
+        self.mapView.mapType = MKMapTypeHybrid;
+    }
 }
 - (IBAction)zoomStepper:(UIStepper *)sender {
+    self.stepperValue = 50-sender.value;
+    self.spanValue = (self.stepperValue/500)+0.02;
+    CLLocation *currentLocation = self.location.location;
+    CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
+    self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(self.spanValue, self.spanValue));
 }
 @end
