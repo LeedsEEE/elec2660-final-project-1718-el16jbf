@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.data = [[PubDataModel alloc] init];
+    self.numberOfPubsLabel.text = [NSString stringWithFormat:@"Number of pubs = %lu",(unsigned long)self.data.pubArray.count];
     
     self.location = [[CLLocationManager alloc] init];
     

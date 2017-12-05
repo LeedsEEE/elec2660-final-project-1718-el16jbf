@@ -1,19 +1,18 @@
 //
-//  TablePubViewCell.m
+//  DrinksTableViewCell.m
 //  Project - Pub Crawl Tracker
 //
-//  Created by Josh on 24/11/2017.
+//  Created by Joshua Fincher [el16jbf] on 05/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "TablePubViewCell.h"
+#import "DrinksTableViewCell.h"
 
-@implementation TablePubViewCell
+@implementation DrinksTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.data = [[PubDataModel alloc] init];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -22,6 +21,7 @@
     // Configure the view for the selected state
 }
 
-- (IBAction)cellSwitchChanged:(UISwitch *)sender {
+- (IBAction)numberDrunkStepper:(UIStepper *)sender {
+    self.numberDrunkLabel.text = [NSString stringWithFormat:@"%d",(int)sender.value];
 }
 @end

@@ -19,6 +19,9 @@
 		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
 		03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */; };
 		03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03E6D4281FC7302700CD8C49 /* Library logo.jpg */; };
+		570D87121FD6C57C00692713 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87111FD6C57C00692713 /* Drinks.m */; };
+		570D87151FD6C59100692713 /* DrinksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87141FD6C59100692713 /* DrinksDataModel.m */; };
+		570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */; };
 		5786295A1FB1E32100BE1B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629591FB1E32100BE1B86 /* main.m */; };
 		5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295C1FB1E32100BE1B86 /* AppDelegate.m */; };
 		578629631FB1E32100BE1B86 /* AddPubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629621FB1E32100BE1B86 /* AddPubViewController.m */; };
@@ -74,6 +77,12 @@
 		03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewController.h; sourceTree = "<group>"; };
 		03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewController.m; sourceTree = "<group>"; };
 		03E6D4281FC7302700CD8C49 /* Library logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library logo.jpg"; sourceTree = "<group>"; };
+		570D87101FD6C57C00692713 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
+		570D87111FD6C57C00692713 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
+		570D87131FD6C59100692713 /* DrinksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksDataModel.h; sourceTree = "<group>"; };
+		570D87141FD6C59100692713 /* DrinksDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksDataModel.m; sourceTree = "<group>"; };
+		570D87161FD6C5BC00692713 /* DrinksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksTableViewCell.h; sourceTree = "<group>"; };
+		570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksTableViewCell.m; sourceTree = "<group>"; };
 		578629551FB1E32100BE1B86 /* Project - Pub Crawl Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project - Pub Crawl Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		578629591FB1E32100BE1B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5786295B1FB1E32100BE1B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,8 +175,14 @@
 		034893E91FC442B100BCEAAA /* Drinks Tab */ = {
 			isa = PBXGroup;
 			children = (
+				570D87101FD6C57C00692713 /* Drinks.h */,
+				570D87111FD6C57C00692713 /* Drinks.m */,
+				570D87131FD6C59100692713 /* DrinksDataModel.h */,
+				570D87141FD6C59100692713 /* DrinksDataModel.m */,
 				034893E11FC4422400BCEAAA /* DrinksConsumptionViewController.h */,
 				034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */,
+				570D87161FD6C5BC00692713 /* DrinksTableViewCell.h */,
+				570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */,
 				034893E41FC4423700BCEAAA /* DrinkSelectorViewController.h */,
 				034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */,
 				034893DB1FC4418E00BCEAAA /* AddDrinkViewController.h */,
@@ -406,6 +421,8 @@
 				57BE00FB1FD1931E00FAD0B7 /* MapScreenViewController.m in Sources */,
 				034893DA1FC4415D00BCEAAA /* Pub.m in Sources */,
 				5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */,
+				570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */,
+				570D87151FD6C59100692713 /* DrinksDataModel.m in Sources */,
 				034893E31FC4422400BCEAAA /* DrinksConsumptionViewController.m in Sources */,
 				57EF79051FCC955F0006E004 /* PubEntity.m in Sources */,
 				034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */,
@@ -416,6 +433,7 @@
 				5786295A1FB1E32100BE1B86 /* main.m in Sources */,
 				034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */,
 				0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */,
+				570D87121FD6C57C00692713 /* Drinks.m in Sources */,
 				57EF78ED1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

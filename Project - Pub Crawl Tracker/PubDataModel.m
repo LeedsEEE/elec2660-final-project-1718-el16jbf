@@ -29,7 +29,7 @@
         library.logo = @"Library logo.jpg";
         library.latitude = 53.810657558956166;
         library.longitude = -1.5569058365234696;
-        library.include = false;
+        library.include = true;
         
         Pub *hyde = [[Pub alloc] init];
         hyde.name = @"The Hyde Park Pub";

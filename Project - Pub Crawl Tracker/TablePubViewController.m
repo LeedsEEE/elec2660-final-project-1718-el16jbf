@@ -34,19 +34,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     NSInteger numberOfRows;
     if (section ==0) {
-        numberOfRows = _data.pubArray.count;
-    } else if (section ==1) {
-        // code to count number of item in user added
-       // NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
-       // userPubsArray = [self.userData valueForKey:@"name"];
+        numberOfRows = self.data.pubArray.count;
+    } /*else if (section ==1) {
+         code to count number of item in user added
+      NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
+       userPubsArray = [self.userData valueForKey:@"name"];
         numberOfRows = 1;//[userPubsArray count];
-    }
+    }*/
     return numberOfRows;
 }
 
@@ -62,11 +62,11 @@
         cell.nameLabel.text = TempPub.name;
         cell.cellSwitchOutlet.on = TempPub.include;
         cell.cellSwitchOutlet.tag = indexPath.row;
-    } else if (indexPath.section == 1){
-        // enter details for user added pubs
-       // NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
-      //  userPubsArray = [self.pubData valueForKey:@"name"];
-    }
+    } /*else if (indexPath.section == 1){
+      enter details for user added pubs
+      NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
+     userPubsArray = [self.data valueForKey:@"name"];
+    }*/
     
     return cell;
 }

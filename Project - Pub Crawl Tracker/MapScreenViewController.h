@@ -15,6 +15,7 @@
 @interface MapScreenViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfPubsLabel;
 
 @property double stepperValue;
 @property double spanValue;
