@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.data = [[DrinksDataModel alloc] init];
+    self.cellData = [[DrinksTableViewCell alloc] init];
     self.UnitsConsumedLabel.text = @"units consumed = 0";
 }
 
@@ -40,9 +41,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;{
     static NSString *cellid = @"cell";
     DrinksTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
+    
     if (indexPath.section == 0) {
         Drinks *tempDrink = [self.data.drinksArray objectAtIndex:indexPath.row];
+        tempDrink.stepperValue = self.cellData.StepperValue;
         cell.drinkNameLabel.text = tempDrink.name;
+        cell.numberStepper.value = tempDrink.stepperValue;
+        cell.numberDrunkLabel.text = [NSString stringWithFormat:@"%d",tempDrink.stepperValue];
         cell.numberDrunkLabel.tag = indexPath.row;
         cell.numberStepper.tag = indexPath.row;
     }
@@ -71,6 +76,7 @@
 - (IBAction)stepperChanged:(UIStepper *)sender {
     Drinks *temp = [self.data.drinksArray objectAtIndex:sender.tag];
     temp.unitsConsumed = temp.units*sender.value;
+    temp.stepperValue = sender.value;
      [self.data.drinksArray replaceObjectAtIndex:sender.tag withObject:temp];
     NSLog(@"%@", [NSString stringWithFormat:@"Units consumed = %.2f", temp.unitsConsumed]);
     [self UpdateUnitConsumption];
@@ -83,5 +89,15 @@
             totalConsumption = totalConsumption+temp.unitsConsumed;
     }
     self.UnitsConsumedLabel.text = [NSString stringWithFormat:@"Units consumed = %.2f", totalConsumption];
+}
+
+- (void) UpdatePressed:(UIButton *)sender{
+    for (int i = 0; i < self.data.drinksArray.count; i++) {
+        Drinks *temp = [self.data.drinksArray objectAtIndex:i];
+        temp.stepperValue = 0;
+        temp.unitsConsumed = 0;
+        [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
+    }
+    [self UpdateUnitConsumption];
 }
 @end

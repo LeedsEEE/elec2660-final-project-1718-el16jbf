@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -519,10 +519,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="yXq-nw-g0a" customClass="DrinksTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yXq-nw-g0a" id="LDy-qw-11z">
-                                            <frame key="frameInset" width="1000" height="44"/>
+                                            <frame key="frameInset" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zYZ-qX-K25">
@@ -571,16 +571,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-IP-ZaF">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="UpdatePressed:" destination="Del-sD-M8o" eventType="touchUpInside" id="cih-z8-riR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7vd-6V-TsD" firstAttribute="centerX" secondItem="mJZ-zW-oaf" secondAttribute="centerX" id="2DY-4F-9Zp"/>
-                            <constraint firstItem="ViG-aw-vWv" firstAttribute="top" secondItem="7vd-6V-TsD" secondAttribute="bottom" constant="20" id="D9L-3Z-JzT"/>
+                            <constraint firstItem="wDI-IP-ZaF" firstAttribute="top" secondItem="7vd-6V-TsD" secondAttribute="bottom" constant="10" id="5Di-AB-t73"/>
+                            <constraint firstItem="wDI-IP-ZaF" firstAttribute="centerX" secondItem="mJZ-zW-oaf" secondAttribute="centerX" id="73V-gS-cps"/>
                             <constraint firstItem="vuk-ze-cAg" firstAttribute="centerX" secondItem="mJZ-zW-oaf" secondAttribute="centerX" id="EF9-au-8WS"/>
                             <constraint firstItem="vuk-ze-cAg" firstAttribute="leading" secondItem="mJZ-zW-oaf" secondAttribute="leadingMargin" id="EvC-pU-hYQ"/>
                             <constraint firstItem="vuk-ze-cAg" firstAttribute="top" secondItem="GPh-MC-mOq" secondAttribute="bottom" constant="10" id="FpS-vW-eWT"/>
                             <constraint firstItem="GPh-MC-mOq" firstAttribute="centerX" secondItem="mJZ-zW-oaf" secondAttribute="centerX" id="KVj-ar-FL4"/>
-                            <constraint firstItem="7vd-6V-TsD" firstAttribute="top" secondItem="vuk-ze-cAg" secondAttribute="bottom" constant="10" id="L6F-zK-y4b"/>
+                            <constraint firstItem="7vd-6V-TsD" firstAttribute="top" secondItem="vuk-ze-cAg" secondAttribute="bottom" constant="10" id="L11-Mc-mgg"/>
+                            <constraint firstItem="ViG-aw-vWv" firstAttribute="top" secondItem="wDI-IP-ZaF" secondAttribute="bottom" constant="10" id="Ta4-sS-9Au"/>
+                            <constraint firstItem="wDI-IP-ZaF" firstAttribute="leading" secondItem="mJZ-zW-oaf" secondAttribute="leadingMargin" constant="40" id="We1-U3-Ccm"/>
                             <constraint firstItem="7vd-6V-TsD" firstAttribute="leading" secondItem="mJZ-zW-oaf" secondAttribute="leadingMargin" constant="20" id="bSG-zG-jfd"/>
                             <constraint firstItem="GPh-MC-mOq" firstAttribute="top" secondItem="LrB-0L-kQH" secondAttribute="bottom" constant="40" id="qTF-k1-P5f"/>
                         </constraints>
@@ -831,7 +841,7 @@
         <scene sceneID="hNa-UF-Moc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hZU-oF-d1c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Drinks Consumption" id="LJV-N9-N7N"/>
+                    <tabBarItem key="tabBarItem" title="Drinks Consumption" image="drinks-consumption-icon.png" selectedImage="drinks-consumption-icon.png" id="LJV-N9-N7N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EWw-IR-7PZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -848,6 +858,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="drinks-consumption-icon.png" width="25" height="25"/>
         <image name="map-icon.png" width="25" height="25"/>
         <image name="pub icon.png" width="25" height="25"/>
         <image name="second" width="30" height="30"/>

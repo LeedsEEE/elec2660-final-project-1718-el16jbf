@@ -18,6 +18,7 @@
 @interface DrinksConsumptionViewController : UIViewController
 
 @property (nonatomic, strong) DrinksDataModel *data;
+@property (nonatomic, strong) DrinksTableViewCell *cellData;
 @property (weak, nonatomic) IBOutlet UILabel *UnitsConsumedLabel;
 
 - (IBAction)stepperChanged:(UIStepper *)sender;

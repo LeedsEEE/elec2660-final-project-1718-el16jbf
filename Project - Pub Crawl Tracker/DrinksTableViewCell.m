@@ -22,6 +22,11 @@
 }
 
 - (IBAction)numberDrunkStepper:(UIStepper *)sender {
-    self.numberDrunkLabel.text = [NSString stringWithFormat:@"%d",(int)sender.value];
+    //self.numberDrunkLabel.text = [NSString stringWithFormat:@"%d",(int)sender.value];
+
+    self.StepperValue = sender.value;
+   Drinks *temp = [self.data.drinksArray objectAtIndex:sender.tag];
+    temp.stepperValue = sender.value;
+    [self.data.drinksArray replaceObjectAtIndex:sender.tag withObject:temp];
 }
 @end

@@ -19,6 +19,7 @@
 		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
 		03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */; };
 		03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03E6D4281FC7302700CD8C49 /* Library logo.jpg */; };
+		03FF80B71FD838B2006DC39F /* pub icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03FF80B61FD838B2006DC39F /* pub icon.png */; };
 		570D87121FD6C57C00692713 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87111FD6C57C00692713 /* Drinks.m */; };
 		570D87151FD6C59100692713 /* DrinksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87141FD6C59100692713 /* DrinksDataModel.m */; };
 		570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */; };
@@ -31,7 +32,6 @@
 		578629761FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629751FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerTests.m */; };
 		578629811FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629801FB1E32100BE1B86 /* Project___Pub_Crawl_TrackerUITests.m */; };
 		57BE00FB1FD1931E00FAD0B7 /* MapScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BE00FA1FD1931E00FAD0B7 /* MapScreenViewController.m */; };
-		57C6BD381FD82A9B00E16F46 /* pub icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C6BD371FD82A9B00E16F46 /* pub icon.png */; };
 		57C6BD3A1FD82C4E00E16F46 /* map-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C6BD391FD82C4E00E16F46 /* map-icon.png */; };
 		57C6BD3C1FD82E8C00E16F46 /* drinks-consumption-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57C6BD3B1FD82E8C00E16F46 /* drinks-consumption-icon.png */; };
 		57EF78ED1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57EF78EB1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodeld */; };
@@ -80,6 +80,7 @@
 		03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewController.h; sourceTree = "<group>"; };
 		03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewController.m; sourceTree = "<group>"; };
 		03E6D4281FC7302700CD8C49 /* Library logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library logo.jpg"; sourceTree = "<group>"; };
+		03FF80B61FD838B2006DC39F /* pub icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pub icon.png"; sourceTree = "<group>"; };
 		570D87101FD6C57C00692713 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
 		570D87111FD6C57C00692713 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		570D87131FD6C59100692713 /* DrinksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksDataModel.h; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		578629821FB1E32100BE1B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57BE00F91FD1931E00FAD0B7 /* MapScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScreenViewController.h; sourceTree = "<group>"; };
 		57BE00FA1FD1931E00FAD0B7 /* MapScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapScreenViewController.m; sourceTree = "<group>"; };
-		57C6BD371FD82A9B00E16F46 /* pub icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pub icon.png"; path = "../../../Downloads/pub icon.png"; sourceTree = "<group>"; };
 		57C6BD391FD82C4E00E16F46 /* map-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon.png"; sourceTree = "<group>"; };
 		57C6BD3B1FD82E8C00E16F46 /* drinks-consumption-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drinks-consumption-icon.png"; sourceTree = "<group>"; };
 		57EF78EC1FCC887D0006E004 /* Project - Pub Crawl Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Project - Pub Crawl Tracker.xcdatamodel"; sourceTree = "<group>"; };
@@ -211,8 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				57C6BD3B1FD82E8C00E16F46 /* drinks-consumption-icon.png */,
+				03FF80B61FD838B2006DC39F /* pub icon.png */,
 				57C6BD391FD82C4E00E16F46 /* map-icon.png */,
-				57C6BD371FD82A9B00E16F46 /* pub icon.png */,
 				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
 				034896371FC858F40071B10E /* Library Picture.jpg */,
 				57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */,
@@ -398,13 +398,13 @@
 				5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */,
 				57C6BD3C1FD82E8C00E16F46 /* drinks-consumption-icon.png in Resources */,
 				57C6BD3A1FD82C4E00E16F46 /* map-icon.png in Resources */,
-				57C6BD381FD82A9B00E16F46 /* pub icon.png in Resources */,
 				03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */,
 				57EF78F11FCC8A630006E004 /* Hyde Park Logo.jpg in Resources */,
 				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
 				57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
+				03FF80B71FD838B2006DC39F /* pub icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
