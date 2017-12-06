@@ -19,6 +19,7 @@
 		03DB58EB1FC38D6E007AA647 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58EA1FC38D6E007AA647 /* CoreLocation.framework */; };
 		03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */; };
 		03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03E6D4281FC7302700CD8C49 /* Library logo.jpg */; };
+		03FF094C1FD81FE700FA4B1C /* Map Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03FF094B1FD81FE700FA4B1C /* Map Icon.png */; };
 		570D87121FD6C57C00692713 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87111FD6C57C00692713 /* Drinks.m */; };
 		570D87151FD6C59100692713 /* DrinksDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87141FD6C59100692713 /* DrinksDataModel.m */; };
 		570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */; };
@@ -77,6 +78,7 @@
 		03E6D4251FC6F99600CD8C49 /* TablePubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewController.h; sourceTree = "<group>"; };
 		03E6D4261FC6F99600CD8C49 /* TablePubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewController.m; sourceTree = "<group>"; };
 		03E6D4281FC7302700CD8C49 /* Library logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library logo.jpg"; sourceTree = "<group>"; };
+		03FF094B1FD81FE700FA4B1C /* Map Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon.png"; sourceTree = "<group>"; };
 		570D87101FD6C57C00692713 /* Drinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
 		570D87111FD6C57C00692713 /* Drinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
 		570D87131FD6C59100692713 /* DrinksDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksDataModel.h; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		03E6D42A1FC7302C00CD8C49 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				03FF094B1FD81FE700FA4B1C /* Map Icon.png */,
 				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
 				034896371FC858F40071B10E /* Library Picture.jpg */,
 				57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */,
@@ -392,6 +395,7 @@
 				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
 				57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
+				03FF094C1FD81FE700FA4B1C /* Map Icon.png in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

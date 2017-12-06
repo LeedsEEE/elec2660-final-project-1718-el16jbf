@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xeV-Hd-i9U">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Route-->
+        <!--Map-->
         <scene sceneID="dzC-xk-XkO">
             <objects>
                 <viewController id="SFh-Uo-fT8" customClass="MapScreenViewController" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                             <constraint firstItem="s0x-Qx-IdL" firstAttribute="top" secondItem="V9M-x1-jIq" secondAttribute="bottom" constant="10" id="xxC-FP-Gh1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Route" image="first" id="NHC-cb-1Sq"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map Icon.png" selectedImage="Map Icon.png" id="NHC-cb-1Sq"/>
                     <connections>
                         <outlet property="mapView" destination="s0x-Qx-IdL" id="EYc-5a-61Y"/>
                         <outlet property="numberOfPubsLabel" destination="V9M-x1-jIq" id="6af-1Q-78o"/>
@@ -86,7 +86,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-Ql-qU7">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pub List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ucw-lr-xTV">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                    <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                     <nil key="textColor"/>
@@ -94,10 +94,10 @@
                                 </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="AfI-A5-Xga" customClass="TablePubViewCell">
-                                        <rect key="frame" x="0.0" y="68" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="132" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AfI-A5-Xga" id="zUE-cj-ZSe">
-                                            <frame key="frameInset" width="342" height="74"/>
+                                            <frame key="frameInset" width="342" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTq-wx-xrd">
@@ -522,7 +522,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yXq-nw-g0a" id="LDy-qw-11z">
-                                            <frame key="frameInset" width="343" height="43"/>
+                                            <frame key="frameInset" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zYZ-qX-K25">
@@ -812,7 +812,7 @@
         <scene sceneID="dgr-b8-7EC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cJl-Hu-L6e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pub List" id="LWo-zO-9OW"/>
+                    <tabBarItem key="tabBarItem" title="Pub List" selectedImage="first" id="LWo-zO-9OW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g1z-cU-M4k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -848,11 +848,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Map Icon.png" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mNv-OT-Jiv"/>
-        <segue reference="RFk-88-Y9W"/>
+        <segue reference="cbL-Ol-tM2"/>
+        <segue reference="Nth-w4-8EC"/>
     </inferredMetricsTieBreakers>
 </document>
