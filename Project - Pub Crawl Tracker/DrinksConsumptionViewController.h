@@ -11,6 +11,10 @@
 #import "DrinksDataModel.h"
 #import "DrinksTableViewCell.h"
 
+/* icon from http://www.iconhot.com/icon/png/symbolicons-drink/512/drink-wine-glass.png
+                resized at  http://resizeimage.net
+ */
+
 @interface DrinksConsumptionViewController : UIViewController
 
 @property (nonatomic, strong) DrinksDataModel *data;

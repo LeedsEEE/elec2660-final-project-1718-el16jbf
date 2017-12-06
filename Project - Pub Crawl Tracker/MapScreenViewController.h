@@ -12,6 +12,11 @@
 #import "Pub.h"
 #import "PubDataModel.h"
 
+/* Refrences
+ icon image = https://cdn4.iconfinder.com/data/icons/pictograms-1/512/Map-512.png
+                resized at http://resizeimage.net
+ */
+
 @interface MapScreenViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;

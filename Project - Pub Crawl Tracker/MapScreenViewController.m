@@ -19,20 +19,13 @@
     // Do any additional setup after loading the view.
     self.data = [[PubDataModel alloc] init];
     self.numberOfPubsLabel.text = [NSString stringWithFormat:@"Number of pubs = %lu",(unsigned long)self.data.pubArray.count];
-    
     self.location = [[CLLocationManager alloc] init];
-    
     self.mapView.delegate = self;
     self.location.delegate = self;
-    
-    [self.location requestWhenInUseAuthorization];
-    
     self.mapView.showsUserLocation = YES;
-    //CLLocation *currentLocation = self.location.location;
-    //CLLocationCoordinate2D coordinates = currentLocation.coordinate;
     self.spanValue = 0.014;
-    
-   [self PlotAnnotations];
+    [self.location requestWhenInUseAuthorization];
+    [self PlotAnnotations];
                                                  
 }
 - (void) viewWillAppear:(BOOL)animated{

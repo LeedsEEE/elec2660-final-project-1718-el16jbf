@@ -13,10 +13,14 @@
 #import "TablePubViewCell.h"
 #import "PubEntity+Add.h"
 
+/* tab bar icon = hhttps://cdn3.iconfinder.com/data/icons/snack-time/400/snack_time-17-512.png
+                    resized at http://resizeimage.net
+ */
+
 @interface TablePubViewController : UIViewController
 
 - (IBAction)SwitchChanged:(UISwitch *)sender;
 @property (nonatomic, strong) PubDataModel *data;
-//@property (nonatomic, strong) PubEntity *userData;
+
 
 @end

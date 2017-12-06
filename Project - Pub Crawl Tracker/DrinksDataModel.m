@@ -17,20 +17,32 @@
         
         self.drinksArray = [NSMutableArray array];
         
-        Drinks *pintFourLager = [[Drinks alloc] init];
-        pintFourLager.name = @"Pint of 4% Lager";
-        pintFourLager.units = 2.3;
-        pintFourLager.numberDrunk = 0;
-        pintFourLager.unitsConsumed = 0;
+        Drinks *pintFour = [[Drinks alloc] init];
+        pintFour.name = @"Pint of 4%";
+        pintFour.units = 2.3;
+        pintFour.numberDrunk = 0;
+        pintFour.unitsConsumed = 0;
         
-        Drinks *pintFiveLager = [[Drinks alloc] init];
-        pintFiveLager.name = @"pint of 5% Larger";
-        pintFiveLager.units = 2.8;
-        pintFiveLager.numberDrunk = 1;
-        pintFiveLager.unitsConsumed = 0;
+        Drinks *pintFive = [[Drinks alloc] init];
+        pintFive.name = @"Pint of 5%";
+        pintFive.units = 2.8;
+        pintFive.numberDrunk = 1;
+        pintFive.unitsConsumed = 0;
         
-        [self.drinksArray addObject:pintFourLager]; //index 0
-        [self.drinksArray addObject:pintFiveLager]; //index 1
+        Drinks *bottleFour = [[Drinks alloc] init];
+        bottleFour.name = @"Bottle of 4%";
+        
+        Drinks *bottleFive = [[Drinks alloc] init];
+        bottleFour.name = @"Bottle of 5%";
+        
+        Drinks *mixerSingle = [[Drinks alloc] init];
+        bottleFour.name = @"Single mixer";
+        
+        [self.drinksArray addObject:pintFour]; //index 0
+        [self.drinksArray addObject:pintFive]; //index 1
+        [self.drinksArray addObject:bottleFour]; //index 2
+        [self.drinksArray addObject:bottleFive]; //index 3
+        [self.drinksArray addObject:mixerSingle]; //index 4
         
     }
     return self;
