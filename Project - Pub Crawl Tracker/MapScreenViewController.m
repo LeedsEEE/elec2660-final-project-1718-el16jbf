@@ -89,6 +89,7 @@
             
             MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init];
             pointAnnotation.coordinate = pubCoordinates;
+            pointAnnotation.title = temp.name;
             
             [self.mapView addAnnotation:pointAnnotation];
         }

@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033F76901FD9796C00AEEFC3 /* horseshoes logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F768F1FD9796C00AEEFC3 /* horseshoes logo.jpg */; };
+		033F76941FD9798B00AEEFC3 /* Horseshoes picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76911FD9798B00AEEFC3 /* Horseshoes picture.jpg */; };
+		033F76951FD9798B00AEEFC3 /* Woodies Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76921FD9798B00AEEFC3 /* Woodies Logo.jpg */; };
+		033F76961FD9798B00AEEFC3 /* Woodies picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76931FD9798B00AEEFC3 /* Woodies picture.jpg */; };
+		033F76991FD9817A00AEEFC3 /* arc logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76971FD9817A00AEEFC3 /* arc logo.jpg */; };
+		033F769A1FD9817A00AEEFC3 /* new inn logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76981FD9817A00AEEFC3 /* new inn logo.jpg */; };
+		033F769F1FD9861500AEEFC3 /* arc picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F769B1FD9861500AEEFC3 /* arc picture.jpg */; };
+		033F76A01FD9861500AEEFC3 /* New Inn Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F769C1FD9861500AEEFC3 /* New Inn Picture.jpg */; };
+		033F76A11FD9861500AEEFC3 /* taps logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F769D1FD9861500AEEFC3 /* taps logo.jpg */; };
+		033F76A21FD9861500AEEFC3 /* taps picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F769E1FD9861500AEEFC3 /* taps picture.jpg */; };
+		033F76A41FD986C200AEEFC3 /* box logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76A31FD986C200AEEFC3 /* box logo.jpg */; };
+		033F76A61FD9871600AEEFC3 /* box picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76A51FD9871600AEEFC3 /* box picture.jpg */; };
+		033F76A81FD987B000AEEFC3 /* skyrack picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76A71FD987B000AEEFC3 /* skyrack picture.jpg */; };
+		033F76AA1FD987BB00AEEFC3 /* skyrack logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76A91FD987BB00AEEFC3 /* skyrack logo.jpg */; };
+		033F76AC1FD98D4800AEEFC3 /* original oak logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76AB1FD98D4800AEEFC3 /* original oak logo.jpg */; };
+		033F76AE1FD98D5100AEEFC3 /* original oak picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76AD1FD98D5100AEEFC3 /* original oak picture.jpg */; };
+		033F76B01FD9977A00AEEFC3 /* pack horse picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76AF1FD9977A00AEEFC3 /* pack horse picture.jpg */; };
+		033F76B21FD997D900AEEFC3 /* pack horse logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 033F76B11FD997D900AEEFC3 /* pack horse logo.png */; };
+		033F76B41FD9984600AEEFC3 /* eldon picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76B31FD9984600AEEFC3 /* eldon picture.jpg */; };
+		033F76B61FD9991E00AEEFC3 /* eldon logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76B51FD9991E00AEEFC3 /* eldon logo.jpg */; };
+		033F76B81FD99A4F00AEEFC3 /* luu logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 033F76B71FD99A4F00AEEFC3 /* luu logo.png */; };
+		033F76BA1FD99A9800AEEFC3 /* luu picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76B91FD99A9800AEEFC3 /* luu picture.jpg */; };
+		033F76BC1FD9A01000AEEFC3 /* fenton picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76BB1FD9A01000AEEFC3 /* fenton picture.jpg */; };
+		033F76BE1FD9A02300AEEFC3 /* fenton logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76BD1FD9A02300AEEFC3 /* fenton logo.jpg */; };
+		033F76C11FD9A12900AEEFC3 /* strawbs logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 033F76BF1FD9A12900AEEFC3 /* strawbs logo.png */; };
+		033F76C21FD9A12900AEEFC3 /* strawbs picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76C01FD9A12900AEEFC3 /* strawbs picture.jpg */; };
+		033F76C41FD9A1DD00AEEFC3 /* dry dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76C31FD9A1DD00AEEFC3 /* dry dock.jpg */; };
+		033F76C61FD9A1E900AEEFC3 /* dry dock logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76C51FD9A1E900AEEFC3 /* dry dock logo.jpg */; };
 		034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D61FC4414100BCEAAA /* PubDataModel.m */; };
 		034893DA1FC4415D00BCEAAA /* Pub.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D91FC4415D00BCEAAA /* Pub.m */; };
 		034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893DC1FC4418E00BCEAAA /* AddDrinkViewController.m */; };
@@ -60,6 +88,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033F768F1FD9796C00AEEFC3 /* horseshoes logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "horseshoes logo.jpg"; sourceTree = "<group>"; };
+		033F76911FD9798B00AEEFC3 /* Horseshoes picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Horseshoes picture.jpg"; sourceTree = "<group>"; };
+		033F76921FD9798B00AEEFC3 /* Woodies Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Woodies Logo.jpg"; sourceTree = "<group>"; };
+		033F76931FD9798B00AEEFC3 /* Woodies picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Woodies picture.jpg"; sourceTree = "<group>"; };
+		033F76971FD9817A00AEEFC3 /* arc logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "arc logo.jpg"; sourceTree = "<group>"; };
+		033F76981FD9817A00AEEFC3 /* new inn logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new inn logo.jpg"; sourceTree = "<group>"; };
+		033F769B1FD9861500AEEFC3 /* arc picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "arc picture.jpg"; sourceTree = "<group>"; };
+		033F769C1FD9861500AEEFC3 /* New Inn Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "New Inn Picture.jpg"; sourceTree = "<group>"; };
+		033F769D1FD9861500AEEFC3 /* taps logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taps logo.jpg"; sourceTree = "<group>"; };
+		033F769E1FD9861500AEEFC3 /* taps picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taps picture.jpg"; sourceTree = "<group>"; };
+		033F76A31FD986C200AEEFC3 /* box logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "box logo.jpg"; sourceTree = "<group>"; };
+		033F76A51FD9871600AEEFC3 /* box picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "box picture.jpg"; sourceTree = "<group>"; };
+		033F76A71FD987B000AEEFC3 /* skyrack picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "skyrack picture.jpg"; sourceTree = "<group>"; };
+		033F76A91FD987BB00AEEFC3 /* skyrack logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "skyrack logo.jpg"; sourceTree = "<group>"; };
+		033F76AB1FD98D4800AEEFC3 /* original oak logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "original oak logo.jpg"; sourceTree = "<group>"; };
+		033F76AD1FD98D5100AEEFC3 /* original oak picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "original oak picture.jpg"; sourceTree = "<group>"; };
+		033F76AF1FD9977A00AEEFC3 /* pack horse picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pack horse picture.jpg"; sourceTree = "<group>"; };
+		033F76B11FD997D900AEEFC3 /* pack horse logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pack horse logo.png"; sourceTree = "<group>"; };
+		033F76B31FD9984600AEEFC3 /* eldon picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eldon picture.jpg"; sourceTree = "<group>"; };
+		033F76B51FD9991E00AEEFC3 /* eldon logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eldon logo.jpg"; sourceTree = "<group>"; };
+		033F76B71FD99A4F00AEEFC3 /* luu logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "luu logo.png"; sourceTree = "<group>"; };
+		033F76B91FD99A9800AEEFC3 /* luu picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "luu picture.jpg"; sourceTree = "<group>"; };
+		033F76BB1FD9A01000AEEFC3 /* fenton picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fenton picture.jpg"; sourceTree = "<group>"; };
+		033F76BD1FD9A02300AEEFC3 /* fenton logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fenton logo.jpg"; sourceTree = "<group>"; };
+		033F76BF1FD9A12900AEEFC3 /* strawbs logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "strawbs logo.png"; sourceTree = "<group>"; };
+		033F76C01FD9A12900AEEFC3 /* strawbs picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "strawbs picture.jpg"; sourceTree = "<group>"; };
+		033F76C31FD9A1DD00AEEFC3 /* dry dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dry dock.jpg"; sourceTree = "<group>"; };
+		033F76C51FD9A1E900AEEFC3 /* dry dock logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dry dock logo.jpg"; sourceTree = "<group>"; };
 		034893D51FC4414100BCEAAA /* PubDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubDataModel.h; sourceTree = "<group>"; };
 		034893D61FC4414100BCEAAA /* PubDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubDataModel.m; sourceTree = "<group>"; };
 		034893D81FC4415D00BCEAAA /* Pub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pub.h; sourceTree = "<group>"; };
@@ -213,10 +269,38 @@
 				57C6BD3B1FD82E8C00E16F46 /* drinks-consumption-icon.png */,
 				03FF80B61FD838B2006DC39F /* pub icon.png */,
 				57C6BD391FD82C4E00E16F46 /* map-icon.png */,
-				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
-				034896371FC858F40071B10E /* Library Picture.jpg */,
-				57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */,
+				033F76931FD9798B00AEEFC3 /* Woodies picture.jpg */,
+				033F76921FD9798B00AEEFC3 /* Woodies Logo.jpg */,
+				033F76911FD9798B00AEEFC3 /* Horseshoes picture.jpg */,
+				033F768F1FD9796C00AEEFC3 /* horseshoes logo.jpg */,
+				033F769C1FD9861500AEEFC3 /* New Inn Picture.jpg */,
+				033F76981FD9817A00AEEFC3 /* new inn logo.jpg */,
+				033F769E1FD9861500AEEFC3 /* taps picture.jpg */,
+				033F769D1FD9861500AEEFC3 /* taps logo.jpg */,
+				033F769B1FD9861500AEEFC3 /* arc picture.jpg */,
+				033F76971FD9817A00AEEFC3 /* arc logo.jpg */,
+				033F76A51FD9871600AEEFC3 /* box picture.jpg */,
+				033F76A31FD986C200AEEFC3 /* box logo.jpg */,
+				033F76A71FD987B000AEEFC3 /* skyrack picture.jpg */,
+				033F76A91FD987BB00AEEFC3 /* skyrack logo.jpg */,
+				033F76AD1FD98D5100AEEFC3 /* original oak picture.jpg */,
+				033F76AB1FD98D4800AEEFC3 /* original oak logo.jpg */,
 				57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */,
+				57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */,
+				034896371FC858F40071B10E /* Library Picture.jpg */,
+				03E6D4281FC7302700CD8C49 /* Library logo.jpg */,
+				033F76AF1FD9977A00AEEFC3 /* pack horse picture.jpg */,
+				033F76B11FD997D900AEEFC3 /* pack horse logo.png */,
+				033F76B31FD9984600AEEFC3 /* eldon picture.jpg */,
+				033F76B51FD9991E00AEEFC3 /* eldon logo.jpg */,
+				033F76B91FD99A9800AEEFC3 /* luu picture.jpg */,
+				033F76B71FD99A4F00AEEFC3 /* luu logo.png */,
+				033F76BB1FD9A01000AEEFC3 /* fenton picture.jpg */,
+				033F76BD1FD9A02300AEEFC3 /* fenton logo.jpg */,
+				033F76C01FD9A12900AEEFC3 /* strawbs picture.jpg */,
+				033F76BF1FD9A12900AEEFC3 /* strawbs logo.png */,
+				033F76C31FD9A1DD00AEEFC3 /* dry dock.jpg */,
+				033F76C51FD9A1E900AEEFC3 /* dry dock logo.jpg */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -395,16 +479,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033F76C21FD9A12900AEEFC3 /* strawbs picture.jpg in Resources */,
+				033F76B41FD9984600AEEFC3 /* eldon picture.jpg in Resources */,
+				033F76941FD9798B00AEEFC3 /* Horseshoes picture.jpg in Resources */,
+				033F76C41FD9A1DD00AEEFC3 /* dry dock.jpg in Resources */,
 				5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */,
 				57C6BD3C1FD82E8C00E16F46 /* drinks-consumption-icon.png in Resources */,
+				033F76A01FD9861500AEEFC3 /* New Inn Picture.jpg in Resources */,
 				57C6BD3A1FD82C4E00E16F46 /* map-icon.png in Resources */,
+				033F76A11FD9861500AEEFC3 /* taps logo.jpg in Resources */,
 				03E6D4291FC7302700CD8C49 /* Library logo.jpg in Resources */,
 				57EF78F11FCC8A630006E004 /* Hyde Park Logo.jpg in Resources */,
+				033F76AA1FD987BB00AEEFC3 /* skyrack logo.jpg in Resources */,
+				033F76AE1FD98D5100AEEFC3 /* original oak picture.jpg in Resources */,
+				033F76951FD9798B00AEEFC3 /* Woodies Logo.jpg in Resources */,
 				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
+				033F76AC1FD98D4800AEEFC3 /* original oak logo.jpg in Resources */,
+				033F76BC1FD9A01000AEEFC3 /* fenton picture.jpg in Resources */,
+				033F76961FD9798B00AEEFC3 /* Woodies picture.jpg in Resources */,
+				033F76C11FD9A12900AEEFC3 /* strawbs logo.png in Resources */,
 				57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */,
+				033F76BA1FD99A9800AEEFC3 /* luu picture.jpg in Resources */,
+				033F76991FD9817A00AEEFC3 /* arc logo.jpg in Resources */,
 				578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */,
 				578629661FB1E32100BE1B86 /* Main.storyboard in Resources */,
+				033F76B01FD9977A00AEEFC3 /* pack horse picture.jpg in Resources */,
+				033F76B81FD99A4F00AEEFC3 /* luu logo.png in Resources */,
+				033F76B61FD9991E00AEEFC3 /* eldon logo.jpg in Resources */,
+				033F76B21FD997D900AEEFC3 /* pack horse logo.png in Resources */,
+				033F76A61FD9871600AEEFC3 /* box picture.jpg in Resources */,
+				033F76A21FD9861500AEEFC3 /* taps picture.jpg in Resources */,
+				033F76901FD9796C00AEEFC3 /* horseshoes logo.jpg in Resources */,
+				033F76C61FD9A1E900AEEFC3 /* dry dock logo.jpg in Resources */,
+				033F769F1FD9861500AEEFC3 /* arc picture.jpg in Resources */,
 				03FF80B71FD838B2006DC39F /* pub icon.png in Resources */,
+				033F769A1FD9817A00AEEFC3 /* new inn logo.jpg in Resources */,
+				033F76BE1FD9A02300AEEFC3 /* fenton logo.jpg in Resources */,
+				033F76A41FD986C200AEEFC3 /* box logo.jpg in Resources */,
+				033F76A81FD987B000AEEFC3 /* skyrack picture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
