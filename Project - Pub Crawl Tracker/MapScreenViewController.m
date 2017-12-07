@@ -29,6 +29,7 @@
                                                  
 }
 - (void) viewWillAppear:(BOOL)animated{
+    [self.mapView removeAnnotations:self.mapView.annotations];
     [self PlotAnnotations];
     [self ReloadInputViews];
 }

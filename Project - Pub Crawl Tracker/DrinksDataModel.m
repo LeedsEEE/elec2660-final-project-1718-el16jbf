@@ -15,49 +15,50 @@
     self = [super init];
     if (self) {
         
+        NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
+        
         self.drinksArray = [NSMutableArray array];
         
         Drinks *pintFour = [[Drinks alloc] init];
         pintFour.name = @"Pint of 4%";
         pintFour.units = 2.3;
-        pintFour.numberDrunk = 0;
+        pintFour.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 0"]];
         pintFour.unitsConsumed = 0;
-        pintFour.stepperValue = 0;
         
         Drinks *pintFive = [[Drinks alloc] init];
         pintFive.name = @"Pint of 5%";
         pintFive.units = 2.8;
-        pintFive.numberDrunk = 1;
+        pintFive.numberDrunk = [drinksNumber integerForKey:@" Drunk = 1"];
         pintFive.unitsConsumed = 0;
         
         Drinks *bottleFour = [[Drinks alloc] init];
         bottleFour.name = @"Bottle of 4%";
         bottleFour.units = 1.3;
-        bottleFour.numberDrunk = 0;
+        bottleFour.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 2"]];
         pintFour.unitsConsumed = 0;
         
         Drinks *bottleFive = [[Drinks alloc] init];
         bottleFive.name = @"Bottle of 5%";
         bottleFive.units = 1.7;
-        bottleFive.numberDrunk = 0;
+        bottleFive.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 3"]];
         bottleFive.unitsConsumed = 0;
         
         Drinks *mixerSingle = [[Drinks alloc] init];
         mixerSingle.name = @"Single mixer or 25ml Shot";
         mixerSingle.units = 1;
-        mixerSingle.numberDrunk = 0;
+        mixerSingle.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 4"]];
         mixerSingle.unitsConsumed = 0;
         
         Drinks *mixerDouble = [[Drinks alloc] init];
         mixerDouble.name = @"Double mixer or 50ml Shot";
         mixerDouble.units = 2;
-        mixerDouble.numberDrunk = 0;
+        mixerDouble.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 5"]];
         mixerDouble.unitsConsumed = 0;
         
         Drinks *alcopop = [[Drinks alloc] init];
         alcopop.name = @"Alco-pop bottle";
         alcopop.units = 1.1;
-        alcopop.numberDrunk = 0;
+        alcopop.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 6"]];
         alcopop.unitsConsumed = 0;
         
         [self.drinksArray addObject:pintFour]; //index 0

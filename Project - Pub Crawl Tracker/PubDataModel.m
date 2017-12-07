@@ -21,11 +21,12 @@
     self = [super init];
     if (self) {
         
+        NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
         self.pubArray = [NSMutableArray array];
         
         Pub *woodies = [[Pub alloc] init];
         woodies.name = @"Woodies Craft Ale House";
-       woodies.street = @"104 Otley Road";
+        woodies.street = @"104 Otley Road";
         woodies.town = @"Far Headingley";
         woodies.city = @"Leeds";
         woodies.postcode = @"LS16 5JG";
@@ -35,7 +36,7 @@
         woodies.logo = @"Woodies Logo.jpg";// https://www.facebook.com/WoodiesHeadingley/photos/a.649567105093064.1073741829.335404016509376/1127957407254029/?type=3&theater
         woodies.latitude = 53.8280037;
         woodies.longitude = -1.5831049999999323;
-        woodies.include = true;
+        woodies.include = [switchState boolForKey:@"SwitchState 0"];
         
         Pub *horseshoes = [[Pub alloc] init];
         horseshoes.name = @"The Three Horseshoes";
@@ -49,7 +50,7 @@
         horseshoes.logo = @"horseshoes logo.jpg"; //https://res.cloudinary.com/jpress/image/fetch/w_700,f_auto,ar_3:2,c_fill/https://www.yorkshireeveningpost.co.uk/webimage/1.7214162.1429200328!/image/2335036744.jpg resized at http://resizeimage.net
         horseshoes.latitude = 53.82776609999999;
         horseshoes.longitude = -1.5827315000000226;
-        horseshoes.include = true;
+        horseshoes.include = [switchState boolForKey:@"SwitchState 1"];
 
         Pub *new = [[Pub alloc] init];
         new.name = @"The New Inn";
@@ -63,7 +64,7 @@
         new.logo = @"new inn logo.jpg"; // same as above resized at https://resizeimage.net
         new.latitude = 53.82655874802627;
         new.longitude = -1.5817415714263916;
-        new.include = true;
+        new.include = [switchState boolForKey:@"SwitchState 2"];
 
         Pub *taps = [[Pub alloc] init];
         taps.name = @"The Headingley Taps";
@@ -77,7 +78,7 @@
         taps.logo = @"taps logo.jpg"; // https://www.mbdiningout.co.uk/specific/images/heroes/premises/oak/vc/headingleytaps.jpg
         taps.latitude = 53.8205424434412;
         taps.longitude = -1.5799391269683838;
-        taps.include = true;
+        taps.include = [switchState boolForKey:@"SwitchState 3"];
 
         Pub *arc = [[Pub alloc] init];
         arc.name = @"The Arc";
@@ -91,7 +92,7 @@
         arc.logo = @"arc logo.jpg";
         arc.latitude = 53.82078311221173;
         arc.longitude = -1.5808403491973877;
-        arc.include = true;
+        arc.include = [switchState boolForKey:@"SwitchState 4"];
         
         Pub *box = [[Pub alloc] init];
         box.name = @"The Box";
@@ -105,7 +106,7 @@
         box.logo = @"box logo.jpg"; // https://arcinspirations.com/assets/box/img/box.jpg
         box.latitude = 53.82058044386528;
         box.longitude = -1.5767741203308105;
-        box.include = true;
+        box.include = [switchState boolForKey:@"SwitchState 5"];
 
         Pub *skyrack = [[Pub alloc] init];
         skyrack.name = @"The Skyrack";
@@ -119,7 +120,7 @@
         skyrack.logo = @"skyrack logo.jpg"; // https://media-cdn.tripadvisor.com/media/photo-s/02/4c/22/de/the-skyrack.jpg
         skyrack.latitude = 53.81971909245694;
         skyrack.longitude = -1.576462984085083;
-        skyrack.include = true;
+        skyrack.include = [switchState boolForKey:@"SwitchState 6"];
 
         Pub *oak = [[Pub alloc] init];
         oak.name = @"The Original Oak";
@@ -133,7 +134,7 @@
         oak.logo = @"original oak logo.jpg"; //as above resized at http://resizeimage.net
         oak.latitude = 53.819579754535965;
         oak.longitude = -1.5758353471755981;
-        oak.include = true;
+        oak.include = [switchState boolForKey:@"SwitchState 7"];
         
         Pub *hyde = [[Pub alloc] init];
         hyde.name = @"The Hyde Park Pub";
@@ -147,7 +148,7 @@
         hyde.logo = @"Hyde Park logo.jpg"; // https://pbs.twimg.com/profile_images/906945719352864769/H6hN_KO4.jpg
         hyde.latitude = 53.814942900313696;
         hyde.longitude = -1.5615661746868454;
-        hyde.include = true;
+        hyde.include = [switchState boolForKey:@"SwitchState 8"];
         
         Pub *library = [[Pub alloc] init];
         library.name = @"The Library";
@@ -161,7 +162,7 @@
         library.logo = @"Library logo.jpg";  // https://pbs.twimg.com/profile_images/651681423674482688/AHJXSE6I_400x400.jpg
         library.latitude = 53.810657558956166;
         library.longitude = -1.5569058365234696;
-        library.include = true;
+        library.include = [switchState boolForKey:@"SwitchState 9"];
         
         Pub *packhorse = [[Pub alloc] init];
         packhorse.name = @"The Pack Horse";
@@ -175,7 +176,7 @@
         packhorse.logo = @"pack horse logo.png"; // http://www.burleystreetbrewhouse.co.uk/wp-content/uploads/2011/04/Horsebadge-300x210.png
         packhorse.latitude = 53.81040459960392;
         packhorse.longitude = -1.5557724237442017;
-        packhorse.include = true;
+        packhorse.include = [switchState boolForKey:@"SwitchState 10"];
         
         Pub *eldon = [[Pub alloc] init];
         eldon.name = @"The Eldon";
@@ -189,7 +190,7 @@
         eldon.logo = @"eldon logo.jpg"; //editted from above using http://resizeimage.net
         eldon.latitude = 53.810138531318174;
         eldon.longitude = -1.5552574396133423;
-        eldon.include = true;
+        eldon.include = [switchState boolForKey:@"SwitchState 11"];
         
         Pub *luu = [[Pub alloc] init];
         luu.name = @"Terrace or Old Bar";
@@ -203,7 +204,7 @@
         luu.logo = @"luu logo.png"; // https://www.luu.org.uk/static/img/luu_logo.svg
         luu.latitude = 53.80676026749211;
         luu.longitude = -1.5565167367458344;
-        luu.include = true;
+        luu.include = [switchState boolForKey:@"SwitchState 12"];
         
         Pub *fenton = [[Pub alloc] init];
         fenton.name = @"The Fenton";
@@ -217,7 +218,7 @@
         fenton.logo = @"fenton logo.jpg"; // https://s3-media4.fl.yelpcdn.com/bphoto/i7ZGAKTCWXaHcMTwiQHD1w/348s.jpg edditted at http://resizeimage.net
         fenton.latitude = 53.80572598602085;
         fenton.longitude = -1.5495416522026062;
-        fenton.include = true;
+        fenton.include = [switchState boolForKey:@"SwitchState 13"];
         
         Pub *strawbs = [[Pub alloc] init];
         strawbs.name = @"Strawberryfields Cafe Bar";
@@ -231,7 +232,7 @@
         strawbs.logo = @"strawbs logo.png"; // https://cdn1.iconfinder.com/data/icons/food-drink-5/32/strawberry-512.png
         strawbs.latitude = 53.80566817321014;
         strawbs.longitude = -1.549561768770218;
-        strawbs.include = true;
+        strawbs.include = [switchState boolForKey:@"SwitchState 14"];
         
         Pub *dryDock = [[Pub alloc] init];
         dryDock.name = @"The Dry Dock";
@@ -245,7 +246,7 @@
         dryDock.logo = @"dry dock logo.jpg"; // https://pbs.twimg.com/profile_images/740548525189177347/IHn8EV2i_400x400.jpg
         dryDock.latitude = 53.80453486763053;
         dryDock.longitude = -1.5476560592651367;
-        dryDock.include = true;
+        dryDock.include = [switchState boolForKey:@"SwitchState 15"];
         
         [self.pubArray addObject:woodies];          //index 0
         [self.pubArray addObject:horseshoes];       //index 1

@@ -37,10 +37,8 @@
 		033F76C61FD9A1E900AEEFC3 /* dry dock logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76C51FD9A1E900AEEFC3 /* dry dock logo.jpg */; };
 		034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D61FC4414100BCEAAA /* PubDataModel.m */; };
 		034893DA1FC4415D00BCEAAA /* Pub.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893D91FC4415D00BCEAAA /* Pub.m */; };
-		034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893DC1FC4418E00BCEAAA /* AddDrinkViewController.m */; };
 		034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893DF1FC441CC00BCEAAA /* PubViewController.m */; };
 		034893E31FC4422400BCEAAA /* DrinksConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */; };
-		034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */; };
 		034896381FC858F40071B10E /* Library Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 034896371FC858F40071B10E /* Library Picture.jpg */; };
 		0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0348963A1FC85C750071B10E /* TablePubViewCell.m */; };
 		03DB58E91FC38D63007AA647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB58E81FC38D63007AA647 /* MapKit.framework */; };
@@ -53,7 +51,6 @@
 		570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */; };
 		5786295A1FB1E32100BE1B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629591FB1E32100BE1B86 /* main.m */; };
 		5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5786295C1FB1E32100BE1B86 /* AppDelegate.m */; };
-		578629631FB1E32100BE1B86 /* AddPubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578629621FB1E32100BE1B86 /* AddPubViewController.m */; };
 		578629661FB1E32100BE1B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578629641FB1E32100BE1B86 /* Main.storyboard */; };
 		578629681FB1E32100BE1B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578629671FB1E32100BE1B86 /* Assets.xcassets */; };
 		5786296B1FB1E32100BE1B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578629691FB1E32100BE1B86 /* LaunchScreen.storyboard */; };
@@ -66,8 +63,6 @@
 		57EF78EF1FCC88B70006E004 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EF78EE1FCC88B70006E004 /* CoreData.framework */; };
 		57EF78F11FCC8A630006E004 /* Hyde Park Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */; };
 		57EF78F31FCC8A9A0006E004 /* Hyde Park Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */; };
-		57EF79051FCC955F0006E004 /* PubEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF79041FCC955F0006E004 /* PubEntity.m */; };
-		57EF79081FCC99E30006E004 /* PubEntity+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EF79071FCC99E30006E004 /* PubEntity+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,14 +115,10 @@
 		034893D61FC4414100BCEAAA /* PubDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubDataModel.m; sourceTree = "<group>"; };
 		034893D81FC4415D00BCEAAA /* Pub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pub.h; sourceTree = "<group>"; };
 		034893D91FC4415D00BCEAAA /* Pub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pub.m; sourceTree = "<group>"; };
-		034893DB1FC4418E00BCEAAA /* AddDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDrinkViewController.h; sourceTree = "<group>"; };
-		034893DC1FC4418E00BCEAAA /* AddDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDrinkViewController.m; sourceTree = "<group>"; };
 		034893DE1FC441CC00BCEAAA /* PubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubViewController.h; sourceTree = "<group>"; };
 		034893DF1FC441CC00BCEAAA /* PubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubViewController.m; sourceTree = "<group>"; };
 		034893E11FC4422400BCEAAA /* DrinksConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksConsumptionViewController.h; sourceTree = "<group>"; };
 		034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksConsumptionViewController.m; sourceTree = "<group>"; };
-		034893E41FC4423700BCEAAA /* DrinkSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkSelectorViewController.h; sourceTree = "<group>"; };
-		034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkSelectorViewController.m; sourceTree = "<group>"; };
 		034896371FC858F40071B10E /* Library Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Library Picture.jpg"; sourceTree = "<group>"; };
 		034896391FC85C750071B10E /* TablePubViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePubViewCell.h; sourceTree = "<group>"; };
 		0348963A1FC85C750071B10E /* TablePubViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TablePubViewCell.m; sourceTree = "<group>"; };
@@ -147,8 +138,6 @@
 		578629591FB1E32100BE1B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5786295B1FB1E32100BE1B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5786295C1FB1E32100BE1B86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		578629611FB1E32100BE1B86 /* AddPubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPubViewController.h; sourceTree = "<group>"; };
-		578629621FB1E32100BE1B86 /* AddPubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPubViewController.m; sourceTree = "<group>"; };
 		578629651FB1E32100BE1B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		578629671FB1E32100BE1B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5786296A1FB1E32100BE1B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,10 +157,6 @@
 		57EF78F01FCC8A630006E004 /* Hyde Park Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hyde Park Logo.jpg"; sourceTree = "<group>"; };
 		57EF78F21FCC8A9A0006E004 /* Hyde Park Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hyde Park Picture.jpg"; sourceTree = "<group>"; };
 		57EF78F41FCC91B80006E004 /* Project - Pub Crawl Tracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project - Pub Crawl Tracker-Bridging-Header.h"; sourceTree = "<group>"; };
-		57EF79031FCC955F0006E004 /* PubEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubEntity.h; sourceTree = "<group>"; };
-		57EF79041FCC955F0006E004 /* PubEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubEntity.m; sourceTree = "<group>"; };
-		57EF79061FCC99E30006E004 /* PubEntity+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PubEntity+Add.h"; sourceTree = "<group>"; };
-		57EF79071FCC99E30006E004 /* PubEntity+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PubEntity+Add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,12 +209,6 @@
 				0348963A1FC85C750071B10E /* TablePubViewCell.m */,
 				034893DE1FC441CC00BCEAAA /* PubViewController.h */,
 				034893DF1FC441CC00BCEAAA /* PubViewController.m */,
-				578629611FB1E32100BE1B86 /* AddPubViewController.h */,
-				578629621FB1E32100BE1B86 /* AddPubViewController.m */,
-				57EF79031FCC955F0006E004 /* PubEntity.h */,
-				57EF79041FCC955F0006E004 /* PubEntity.m */,
-				57EF79061FCC99E30006E004 /* PubEntity+Add.h */,
-				57EF79071FCC99E30006E004 /* PubEntity+Add.m */,
 			);
 			name = "Pub Tab";
 			sourceTree = "<group>";
@@ -245,10 +224,6 @@
 				034893E21FC4422400BCEAAA /* DrinksConsumptionViewController.m */,
 				570D87161FD6C5BC00692713 /* DrinksTableViewCell.h */,
 				570D87171FD6C5BC00692713 /* DrinksTableViewCell.m */,
-				034893E41FC4423700BCEAAA /* DrinkSelectorViewController.h */,
-				034893E51FC4423700BCEAAA /* DrinkSelectorViewController.m */,
-				034893DB1FC4418E00BCEAAA /* AddDrinkViewController.h */,
-				034893DC1FC4418E00BCEAAA /* AddDrinkViewController.m */,
 			);
 			name = "Drinks Tab";
 			sourceTree = "<group>";
@@ -541,19 +516,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578629631FB1E32100BE1B86 /* AddPubViewController.m in Sources */,
 				57BE00FB1FD1931E00FAD0B7 /* MapScreenViewController.m in Sources */,
 				034893DA1FC4415D00BCEAAA /* Pub.m in Sources */,
 				5786295D1FB1E32100BE1B86 /* AppDelegate.m in Sources */,
 				570D87181FD6C5BC00692713 /* DrinksTableViewCell.m in Sources */,
 				570D87151FD6C59100692713 /* DrinksDataModel.m in Sources */,
 				034893E31FC4422400BCEAAA /* DrinksConsumptionViewController.m in Sources */,
-				57EF79051FCC955F0006E004 /* PubEntity.m in Sources */,
 				034893E01FC441CC00BCEAAA /* PubViewController.m in Sources */,
-				034893DD1FC4418E00BCEAAA /* AddDrinkViewController.m in Sources */,
-				034893E61FC4423700BCEAAA /* DrinkSelectorViewController.m in Sources */,
 				03E6D4271FC6F99600CD8C49 /* TablePubViewController.m in Sources */,
-				57EF79081FCC99E30006E004 /* PubEntity+Add.m in Sources */,
 				5786295A1FB1E32100BE1B86 /* main.m in Sources */,
 				034893D71FC4414100BCEAAA /* PubDataModel.m in Sources */,
 				0348963B1FC85C750071B10E /* TablePubViewCell.m in Sources */,
@@ -715,6 +685,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Project - Pub Crawl Tracker-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -729,6 +700,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Project - Pub Crawl Tracker-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

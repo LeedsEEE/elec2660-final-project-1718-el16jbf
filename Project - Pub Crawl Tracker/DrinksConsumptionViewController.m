@@ -22,6 +22,15 @@
     self.data = [[DrinksDataModel alloc] init];
     self.cellData = [[DrinksTableViewCell alloc] init];
     self.UnitsConsumedLabel.text = @"units consumed = 0";
+    NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
+    for (int i = 0; i < self.data.drinksArray.count; i++) {
+        self.cellData.numberStepper.value = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
+        Drinks *temp = [self.data.drinksArray objectAtIndex:i];
+        temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
+        [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
+    }
+    [self UpdateUnitConsumption];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,10 +53,9 @@
     
     if (indexPath.section == 0) {
         Drinks *tempDrink = [self.data.drinksArray objectAtIndex:indexPath.row];
-        tempDrink.stepperValue = self.cellData.StepperValue;
         cell.drinkNameLabel.text = tempDrink.name;
-        cell.numberStepper.value = tempDrink.stepperValue;
-        cell.numberDrunkLabel.text = [NSString stringWithFormat:@"%d",tempDrink.stepperValue];
+        cell.numberDrunkLabel.text = [NSString stringWithFormat:@"%.0f", tempDrink.numberDrunk];
+        cell.numberStepper.value = tempDrink.numberDrunk;
         cell.numberDrunkLabel.tag = indexPath.row;
         cell.numberStepper.tag = indexPath.row;
     }
@@ -74,16 +82,18 @@
     
 
 - (IBAction)stepperChanged:(UIStepper *)sender {
+    NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
+    
     Drinks *temp = [self.data.drinksArray objectAtIndex:sender.tag];
-    temp.unitsConsumed = temp.units*sender.value;
-    temp.stepperValue = sender.value;
+    temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %ld",(long)sender.tag]];
      [self.data.drinksArray replaceObjectAtIndex:sender.tag withObject:temp];
     NSLog(@"%@", [NSString stringWithFormat:@"Units consumed = %.2f", temp.unitsConsumed]);
     [self UpdateUnitConsumption];
+    
 }
 
 - (void) UpdateUnitConsumption{
-    float totalConsumption = 0;
+    float totalConsumption = 0.0;
         for (int i = 0; i < self.data.drinksArray.count; i++) {
             Drinks *temp = [self.data.drinksArray objectAtIndex:i];
             totalConsumption = totalConsumption+temp.unitsConsumed;
@@ -92,10 +102,15 @@
 }
 
 - (void) UpdatePressed:(UIButton *)sender{
+    NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
     for (int i = 0; i < self.data.drinksArray.count; i++) {
+        [drinksNumber setInteger:0 forKey:[NSString stringWithFormat:@" Drunk = %d",i]];
+        [drinksNumber setObject:@"0" forKey:[NSString stringWithFormat:@" Drunk = %d",i]];
+        [drinksNumber synchronize];
+        self.cellData.numberStepper.value = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
+        self.cellData.numberDrunkLabel.text = [NSString stringWithFormat:@"%@", [drinksNumber stringForKey:[NSString stringWithFormat:@" Drunk = %d",i]]];
         Drinks *temp = [self.data.drinksArray objectAtIndex:i];
-        temp.stepperValue = 0;
-        temp.unitsConsumed = 0;
+        temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
         [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
     }
     [self UpdateUnitConsumption];

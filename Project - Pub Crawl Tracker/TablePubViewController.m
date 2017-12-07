@@ -23,7 +23,6 @@
     
     
     self.data = [[PubDataModel alloc] init];
-    //self.userData = [[PubEntity alloc] init];
     // Do any additional setup after loading the view.
 }
 
@@ -39,14 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     NSInteger numberOfRows;
-    if (section ==0) {
-        numberOfRows = self.data.pubArray.count;
-    } /*else if (section ==1) {
-         code to count number of item in user added
-      NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
-       userPubsArray = [self.userData valueForKey:@"name"];
-        numberOfRows = 1;//[userPubsArray count];
-    }*/
+    numberOfRows = self.data.pubArray.count;
     return numberOfRows;
 }
 
@@ -56,17 +48,11 @@
     static NSString *cellid = @"cell";
     TablePubViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
     
-    if (indexPath.section == 0){
         Pub *TempPub = [self.data.pubArray objectAtIndex:indexPath.row];
         cell.cellImage.image = [UIImage imageNamed:TempPub.logo];
         cell.nameLabel.text = TempPub.name;
         cell.cellSwitchOutlet.on = TempPub.include;
         cell.cellSwitchOutlet.tag = indexPath.row;
-    } /*else if (indexPath.section == 1){
-      enter details for user added pubs
-      NSMutableArray *userPubsArray = [[NSMutableArray alloc] init];
-     userPubsArray = [self.data valueForKey:@"name"];
-    }*/
     
     return cell;
 }
@@ -89,7 +75,7 @@ if([[segue identifier] isEqualToString:@"ShowPubDetails"])  {
 }
 - (IBAction)SwitchChanged:(UISwitch *)sender {
     
-    NSLog(@"%ld", sender.tag);
+    NSLog(@"tag = %ld", sender.tag);
     Pub *temp = [self.data.pubArray objectAtIndex:sender.tag];
     if(sender.on == true){
         temp.include = true;
@@ -101,6 +87,9 @@ if([[segue identifier] isEqualToString:@"ShowPubDetails"])  {
         NSLog(@"%hhu",temp.include);
         
     }
+    NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
+    [switchState setBool:temp.include forKey:[NSString stringWithFormat:@"SwitchState %d",(int)sender.tag]];
+    [switchState synchronize];
     
 }
 @end

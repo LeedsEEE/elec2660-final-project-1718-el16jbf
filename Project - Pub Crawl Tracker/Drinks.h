@@ -14,6 +14,5 @@
 @property float units;
 @property float numberDrunk;
 @property float unitsConsumed;
-@property int stepperValue;
 
 @end
