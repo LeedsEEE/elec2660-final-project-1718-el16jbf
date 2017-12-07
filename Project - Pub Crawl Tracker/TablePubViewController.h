@@ -11,6 +11,7 @@
 #import "PubDataModel.h"
 #import "PubViewController.h"
 #import "TablePubViewCell.h"
+#import "MapScreenViewController.h"
 
 /* tab bar icon = hhttps://cdn3.iconfinder.com/data/icons/snack-time/400/snack_time-17-512.png
                     resized at http://resizeimage.net

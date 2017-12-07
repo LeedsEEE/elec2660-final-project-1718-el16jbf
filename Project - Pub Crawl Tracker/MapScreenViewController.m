@@ -17,15 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.data = [[PubDataModel alloc] init];
-    self.numberOfPubsLabel.text = [NSString stringWithFormat:@"Number of pubs = %lu",(unsigned long)self.data.pubArray.count];
-    self.location = [[CLLocationManager alloc] init];
-    self.mapView.delegate = self;
+    self.data = [[PubDataModel alloc] init]; //initalise the data
+    self.numberOfPubsLabel.text = [NSString stringWithFormat:@"Number of pubs = %lu",(unsigned long)self.data.pubArray.count]; // use the array count for the label to make the app more versatile
+    self.location = [[CLLocationManager alloc] init]; //initalise the location
+    self.mapView.delegate = self; //set the delegates as this view controller
     self.location.delegate = self;
-    self.mapView.showsUserLocation = YES;
+    self.mapView.showsUserLocation = YES; // tell the map to display user location
     self.spanValue = 0.014;
-    [self.location requestWhenInUseAuthorization];
-    [self PlotAnnotations];
+    [self.location requestWhenInUseAuthorization]; // request permission to view the users location
+    [self PlotAnnotations]; //call the method to plot the annotations of the pubs that are switched on
                                                  
 }
 - (void) viewWillAppear:(BOOL)animated{
@@ -81,11 +81,14 @@
     
     for (int i = 0; i < self.data.pubArray.count; i++) {
         
+         NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
+        
         Pub *temp = [self.data.pubArray objectAtIndex:i];
         NSLog(@"Pub Located: %@",temp.name);
         
         CLLocationCoordinate2D pubCoordinates;
-        if (temp.include == true) {
+        bool Switch = [switchState boolForKey:[NSString stringWithFormat:@"SwitchState %d",i]];
+        if (Switch == true) {
             pubCoordinates = CLLocationCoordinate2DMake(temp.latitude, temp.longitude);
             
             MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init];

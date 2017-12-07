@@ -114,5 +114,6 @@
         [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
     }
     [self UpdateUnitConsumption];
+    self.tableView.reloadData;
 }
 @end

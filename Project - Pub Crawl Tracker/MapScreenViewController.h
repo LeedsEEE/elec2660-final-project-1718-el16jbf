@@ -17,7 +17,7 @@
                 resized at http://resizeimage.net
  */
 
-@interface MapScreenViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MapScreenViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> // set the delegates
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;
 @property (weak, nonatomic) IBOutlet UILabel *numberOfPubsLabel;
@@ -25,7 +25,7 @@
 @property double stepperValue;
 @property double spanValue;
 
-@property (nonatomic, strong) PubDataModel *data;
+@property (nonatomic, strong) PubDataModel *data; 
 
 - (IBAction)zoomStepperPressed:(UIStepper *)sender;
 - (IBAction)mapTypeChanged:(UISegmentedControl *)sender;

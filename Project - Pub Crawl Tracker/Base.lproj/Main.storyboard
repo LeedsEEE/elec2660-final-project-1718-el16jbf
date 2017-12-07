@@ -62,6 +62,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map-icon.png" selectedImage="map-icon.png" id="NHC-cb-1Sq"/>
+                    <navigationItem key="navigationItem" id="RFr-L0-AVq"/>
                     <connections>
                         <outlet property="mapView" destination="s0x-Qx-IdL" id="EYc-5a-61Y"/>
                         <outlet property="numberOfPubsLabel" destination="V9M-x1-jIq" id="6af-1Q-78o"/>
