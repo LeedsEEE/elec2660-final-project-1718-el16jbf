@@ -48,7 +48,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+#pragma mark - Map Actions
 - (IBAction)zoomStepperPressed:(UIStepper *)sender {  // change the span when the stepper is incremented
     NSLog(@"stepper val = %f", sender.value);
     self.stepperValue = 50-sender.value;
@@ -81,7 +81,7 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(self.spanValue, self.spanValue));
     [self.mapView setRegion:region animated:YES];
 }
-
+#pragma mark - map annotations
 -(void) PlotAnnotations {
     int numberOfPubs = 0;
     for (int i = 0; i < self.data.pubArray.count; i++) { // loop to check whether to display on map or not

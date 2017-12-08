@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+//https://cdn2.iconfinder.com/data/icons/location-map-simplicity/512/pub_beer-512.png
+//editted to correct sizes at http://resizeimage.net
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

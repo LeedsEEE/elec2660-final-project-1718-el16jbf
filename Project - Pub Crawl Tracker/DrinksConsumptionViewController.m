@@ -37,7 +37,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - tableView Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     NSInteger numberOfRows;
     if (section == 0) {
@@ -79,19 +79,19 @@
 }
 */
     
-
+#pragma mark - table Cell Actions
 - (IBAction)stepperChanged:(UIStepper *)sender {  //when the stepper is changed implement the method to update the units this corrisponds to
     NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
     
     Drinks *temp = [self.data.drinksArray objectAtIndex:sender.tag];
-    temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %ld",(long)sender.tag]];
-     [self.data.drinksArray replaceObjectAtIndex:sender.tag withObject:temp];
+    temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %ld",(long)sender.tag]]; //recall user defaults
+     [self.data.drinksArray replaceObjectAtIndex:sender.tag withObject:temp]; // update instance of data model
     NSLog(@"%@", [NSString stringWithFormat:@"Units consumed = %.2f", temp.unitsConsumed]);
-    [self UpdateUnitConsumption];
+    [self UpdateUnitConsumption]; //call method to update the comsumption values
     
 }
-
-- (void) UpdateUnitConsumption{
+#pragma mark - General Methods
+- (void) UpdateUnitConsumption{ // calculates the consumption for each type of drink and sums them to get total
     float totalConsumption = 0.0;
         for (int i = 0; i < self.data.drinksArray.count; i++) {
             Drinks *temp = [self.data.drinksArray objectAtIndex:i];
@@ -100,19 +100,19 @@
     self.UnitsConsumedLabel.text = [NSString stringWithFormat:@"Units consumed = %.2f", totalConsumption];
 }
 
-- (void) UpdatePressed:(UIButton *)sender{
+- (void) UpdatePressed:(UIButton *)sender{ //methods to set all values back to zero
     NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
-    for (int i = 0; i < self.data.drinksArray.count; i++) {
-        [drinksNumber setInteger:0 forKey:[NSString stringWithFormat:@" Drunk = %d",i]];
-        [drinksNumber setObject:@"0" forKey:[NSString stringWithFormat:@" Drunk = %d",i]];
-        [drinksNumber synchronize];
-        self.cellData.numberStepper.value = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
-        self.cellData.numberDrunkLabel.text = [NSString stringWithFormat:@"%@", [drinksNumber stringForKey:[NSString stringWithFormat:@" Drunk = %d",i]]];
+    for (int i = 0; i < self.data.drinksArray.count; i++) { //go through all saved values
+        [drinksNumber setInteger:0 forKey:[NSString stringWithFormat:@" Drunk = %d",i]]; //set integer to zero
+        [drinksNumber setObject:@"0" forKey:[NSString stringWithFormat:@" Drunk = %d",i]]; //set string to zero
+        [drinksNumber synchronize]; // force update
+        self.cellData.numberStepper.value = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];  //update the display
+        self.cellData.numberDrunkLabel.text = [NSString stringWithFormat:@"%@", [drinksNumber stringForKey:[NSString stringWithFormat:@" Drunk = %d",i]]];//update the display
         Drinks *temp = [self.data.drinksArray objectAtIndex:i];
         temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
-        [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
+        [self.data.drinksArray replaceObjectAtIndex:i withObject:temp]; // update the instance
     }
-    [self UpdateUnitConsumption];
-    self.tableView.reloadData;
+    [self UpdateUnitConsumption]; // call method to update calculated values
+    self.tableView.reloadData; // refresh the table to show the updates
 }
 @end

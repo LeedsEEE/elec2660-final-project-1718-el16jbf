@@ -30,7 +30,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - TableViewMethods
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 {
     return 1;
@@ -72,8 +72,11 @@ if([[segue identifier] isEqualToString:@"ShowPubDetails"])  {
     NSIndexPath *indexPath = [self.table indexPathForSelectedRow];
     Pub *tempPub = [self.data.pubArray objectAtIndex:indexPath.row];
     destinationViewController.pub = tempPub;
+    }
 }
-}
+
+#pragma mark - Cell Actions
+
 - (IBAction)SwitchChanged:(UISwitch *)sender { // method to save the state of the switch when it is changed
     
     NSLog(@"tag = %ld", sender.tag);
