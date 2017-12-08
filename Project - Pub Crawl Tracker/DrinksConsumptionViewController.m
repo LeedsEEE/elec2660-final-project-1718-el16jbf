@@ -16,20 +16,20 @@
 
 @implementation DrinksConsumptionViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad { //initalise the data
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.data = [[DrinksDataModel alloc] init];
     self.cellData = [[DrinksTableViewCell alloc] init];
     self.UnitsConsumedLabel.text = @"units consumed = 0";
     NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
-    for (int i = 0; i < self.data.drinksArray.count; i++) {
+    for (int i = 0; i < self.data.drinksArray.count; i++) { //go through the user defaults and update the data model
         self.cellData.numberStepper.value = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
         Drinks *temp = [self.data.drinksArray objectAtIndex:i];
         temp.unitsConsumed = temp.units*[drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = %d",i]];
         [self.data.drinksArray replaceObjectAtIndex:i withObject:temp];
     }
-    [self UpdateUnitConsumption];
+    [self UpdateUnitConsumption]; //call method to update the label
     
 }
 
@@ -41,7 +41,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     NSInteger numberOfRows;
     if (section == 0) {
-        numberOfRows = self.data.drinksArray.count;
+        numberOfRows = self.data.drinksArray.count; //use the array count so the code can adapt
     }
     return numberOfRows;
 }
@@ -51,20 +51,19 @@
     static NSString *cellid = @"cell";
     DrinksTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
     
-    if (indexPath.section == 0) {
-        Drinks *tempDrink = [self.data.drinksArray objectAtIndex:indexPath.row];
-        cell.drinkNameLabel.text = tempDrink.name;
-        cell.numberDrunkLabel.text = [NSString stringWithFormat:@"%.0f", tempDrink.numberDrunk];
-        cell.numberStepper.value = tempDrink.numberDrunk;
-        cell.numberDrunkLabel.tag = indexPath.row;
-        cell.numberStepper.tag = indexPath.row;
-    }
+    Drinks *tempDrink = [self.data.drinksArray objectAtIndex:indexPath.row]; // for the row assign the correct information
+    cell.drinkNameLabel.text = tempDrink.name;
+    cell.numberDrunkLabel.text = [NSString stringWithFormat:@"%.0f", tempDrink.numberDrunk];
+    cell.numberStepper.value = tempDrink.numberDrunk;
+    cell.numberDrunkLabel.tag = indexPath.row;  //assign tags so they can be refered to in other methods
+    cell.numberStepper.tag = indexPath.row;
+
     
     return cell;
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;  {            // Default is 1 if not implemented
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;  {            // Default is 1
     return 1;
 }
 
@@ -81,7 +80,7 @@
 */
     
 
-- (IBAction)stepperChanged:(UIStepper *)sender {
+- (IBAction)stepperChanged:(UIStepper *)sender {  //when the stepper is changed implement the method to update the units this corrisponds to
     NSUserDefaults *drinksNumber = [NSUserDefaults standardUserDefaults];
     
     Drinks *temp = [self.data.drinksArray objectAtIndex:sender.tag];

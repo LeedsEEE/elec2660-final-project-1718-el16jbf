@@ -20,7 +20,7 @@
 @interface TablePubViewController : UIViewController
 
 - (IBAction)SwitchChanged:(UISwitch *)sender;
-@property (nonatomic, strong) PubDataModel *data;
+@property (nonatomic, strong) PubDataModel *data; // give the other class a refrence to call it
 
 
 

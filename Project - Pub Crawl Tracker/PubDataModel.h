@@ -11,6 +11,6 @@
 
 @interface PubDataModel : NSObject
 
-@property (nonatomic, strong) NSMutableArray *pubArray;
+@property (nonatomic, strong) NSMutableArray *pubArray; //define the array to store the data in
 
 @end

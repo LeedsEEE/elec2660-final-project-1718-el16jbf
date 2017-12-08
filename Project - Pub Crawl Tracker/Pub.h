@@ -10,6 +10,8 @@
 
 @interface Pub : UIViewController
 
+//define the attributes needed for each item
+
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *street;
 @property (strong, nonatomic) NSString *town;

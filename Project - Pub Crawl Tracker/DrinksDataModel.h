@@ -11,6 +11,6 @@
 
 @interface DrinksDataModel : NSObject
 
-@property NSMutableArray *drinksArray;
+@property NSMutableArray *drinksArray; // create an array to store the data
 
 @end

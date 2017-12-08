@@ -10,6 +10,8 @@
 
 @interface Drinks : NSObject
 
+//define the required attributes of the data
+
 @property (strong, nonatomic) NSString *name;
 @property float units;
 @property float numberDrunk;

@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //assign the items to the data
     self.pubNameLabel.text = self.pub.name;
     self.pubStreetLabel.text = self.pub.street;
     self.pubTownLabel.text = self.pub.town;

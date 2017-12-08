@@ -12,6 +12,8 @@
 
 @interface PubViewController : UIViewController
 
+//assign names to the User interface items so they can be called
+
 @property (weak, nonatomic) IBOutlet UILabel *pubNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pubStreetLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pubTownLabel;

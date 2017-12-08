@@ -17,7 +17,7 @@
 
 @interface DrinksConsumptionViewController : UIViewController
 
-@property (nonatomic, strong) DrinksDataModel *data;
+@property (nonatomic, strong) DrinksDataModel *data;                //create a refrence to other classes so they can easily be called
 @property (nonatomic, strong) DrinksTableViewCell *cellData;
 @property (weak, nonatomic) IBOutlet UILabel *UnitsConsumedLabel;
 

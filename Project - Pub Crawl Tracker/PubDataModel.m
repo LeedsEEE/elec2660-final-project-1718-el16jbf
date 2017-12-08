@@ -23,6 +23,7 @@
         
         NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
         self.pubArray = [NSMutableArray array];
+        // initialise the array and add the data
         
         Pub *woodies = [[Pub alloc] init];
         woodies.name = @"Woodies Craft Ale House";
@@ -247,6 +248,8 @@
         dryDock.latitude = 53.80453486763053;
         dryDock.longitude = -1.5476560592651367;
         dryDock.include = [switchState boolForKey:@"SwitchState 15"];
+        
+        //the array will be in the order added
         
         [self.pubArray addObject:woodies];          //index 0
         [self.pubArray addObject:horseshoes];       //index 1

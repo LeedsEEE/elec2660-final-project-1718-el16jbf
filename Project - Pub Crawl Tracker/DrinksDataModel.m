@@ -19,6 +19,8 @@
         
         self.drinksArray = [NSMutableArray array];
         
+        //initalis the array and add the data to it
+        
         Drinks *pintFour = [[Drinks alloc] init];
         pintFour.name = @"Pint of 4%";
         pintFour.units = 2.3;
@@ -61,6 +63,7 @@
         alcopop.numberDrunk = [drinksNumber integerForKey:[NSString stringWithFormat:@" Drunk = 6"]];
         alcopop.unitsConsumed = 0;
         
+        //array in order added
         [self.drinksArray addObject:pintFour]; //index 0
         [self.drinksArray addObject:pintFive]; //index 1
         [self.drinksArray addObject:bottleFour]; //index 2

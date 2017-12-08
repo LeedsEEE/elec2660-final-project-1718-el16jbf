@@ -28,7 +28,7 @@
     [self PlotAnnotations]; //call the method to plot the annotations of the pubs that are switched on
                                                  
 }
-- (void) viewWillAppear:(BOOL)animated{
+- (void) viewWillAppear:(BOOL)animated{  //implements whenever the view will be shown to the user
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self PlotAnnotations];
     [self ReloadInputViews];
@@ -49,7 +49,7 @@
 }
 */
 
-- (IBAction)zoomStepperPressed:(UIStepper *)sender {
+- (IBAction)zoomStepperPressed:(UIStepper *)sender {  // change the span when the stepper is incremented
     NSLog(@"stepper val = %f", sender.value);
     self.stepperValue = 50-sender.value;
     self.spanValue = (self.stepperValue/500)+0.02;
@@ -60,7 +60,7 @@
 
 }
 
-- (IBAction)mapTypeChanged:(UISegmentedControl *)sender {
+- (IBAction)mapTypeChanged:(UISegmentedControl *)sender {  // changes the type of map displayed depending on the segmented control
     if (sender.selectedSegmentIndex == 0) {
         self.mapView.mapType = MKMapTypeStandard;
     } else if (sender.selectedSegmentIndex == 1) {
@@ -71,7 +71,7 @@
 
 }
 
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(nonnull MKUserLocation *)userLocation{
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(nonnull MKUserLocation *)userLocation{  //method to centre the map on user location with the span value set by the zoom stepper
     NSLog(@"User Location = %f, %f", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
     MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(self.spanValue, self.spanValue));
     [self.mapView setRegion:region animated:YES];
@@ -79,7 +79,7 @@
 
 -(void) PlotAnnotations {
     
-    for (int i = 0; i < self.data.pubArray.count; i++) {
+    for (int i = 0; i < self.data.pubArray.count; i++) { // loop to check whether to display on map or not
         
          NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
         
@@ -89,9 +89,9 @@
         CLLocationCoordinate2D pubCoordinates;
         bool Switch = [switchState boolForKey:[NSString stringWithFormat:@"SwitchState %d",i]];
         if (Switch == true) {
-            pubCoordinates = CLLocationCoordinate2DMake(temp.latitude, temp.longitude);
+            pubCoordinates = CLLocationCoordinate2DMake(temp.latitude, temp.longitude); //set the coordinate of the pin
             
-            MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init];
+            MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init]; //plot the this pin with the following attributes
             pointAnnotation.coordinate = pubCoordinates;
             pointAnnotation.title = temp.name;
             
@@ -101,7 +101,7 @@
     }
     
 }
--(void) ReloadInputViews{
+-(void) ReloadInputViews{ //method to reload the map
     [self.mapView reloadInputViews];
     
     

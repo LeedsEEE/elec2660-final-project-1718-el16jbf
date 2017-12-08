@@ -11,6 +11,8 @@
 #import "PubDataModel.h"
 #import "TablePubViewController.h"
 
+// defines the items in the custom cell
+
 @interface TablePubViewCell : UITableViewCell
 
 @property (nonatomic, strong) PubDataModel *data;
