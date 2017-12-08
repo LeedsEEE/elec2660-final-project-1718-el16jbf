@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030BB5AD1FDAB5E30036FF58 /* current location icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030BB5AC1FDAB5E30036FF58 /* current location icon.png */; };
 		033F76901FD9796C00AEEFC3 /* horseshoes logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F768F1FD9796C00AEEFC3 /* horseshoes logo.jpg */; };
 		033F76941FD9798B00AEEFC3 /* Horseshoes picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76911FD9798B00AEEFC3 /* Horseshoes picture.jpg */; };
 		033F76951FD9798B00AEEFC3 /* Woodies Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 033F76921FD9798B00AEEFC3 /* Woodies Logo.jpg */; };
@@ -83,6 +84,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030BB5AC1FDAB5E30036FF58 /* current location icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current location icon.png"; sourceTree = "<group>"; };
 		033F768F1FD9796C00AEEFC3 /* horseshoes logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "horseshoes logo.jpg"; sourceTree = "<group>"; };
 		033F76911FD9798B00AEEFC3 /* Horseshoes picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Horseshoes picture.jpg"; sourceTree = "<group>"; };
 		033F76921FD9798B00AEEFC3 /* Woodies Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Woodies Logo.jpg"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		03E6D42A1FC7302C00CD8C49 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				030BB5AC1FDAB5E30036FF58 /* current location icon.png */,
 				57C6BD3B1FD82E8C00E16F46 /* drinks-consumption-icon.png */,
 				03FF80B61FD838B2006DC39F /* pub icon.png */,
 				57C6BD391FD82C4E00E16F46 /* map-icon.png */,
@@ -468,6 +471,7 @@
 				033F76AA1FD987BB00AEEFC3 /* skyrack logo.jpg in Resources */,
 				033F76AE1FD98D5100AEEFC3 /* original oak picture.jpg in Resources */,
 				033F76951FD9798B00AEEFC3 /* Woodies Logo.jpg in Resources */,
+				030BB5AD1FDAB5E30036FF58 /* current location icon.png in Resources */,
 				034896381FC858F40071B10E /* Library Picture.jpg in Resources */,
 				033F76AC1FD98D4800AEEFC3 /* original oak logo.jpg in Resources */,
 				033F76BC1FD9A01000AEEFC3 /* fenton picture.jpg in Resources */,

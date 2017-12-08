@@ -29,6 +29,7 @@
 
 - (IBAction)zoomStepperPressed:(UIStepper *)sender;
 - (IBAction)mapTypeChanged:(UISegmentedControl *)sender;
+- (IBAction)currentLocationPressed:(UIButton *)sender;
 
 
 @end

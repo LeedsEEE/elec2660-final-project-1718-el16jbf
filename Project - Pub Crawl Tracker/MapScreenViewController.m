@@ -54,9 +54,8 @@
     self.stepperValue = 50-sender.value;
     self.spanValue = (self.stepperValue/500)+0.02;
     NSLog(@"span val = %f", self.spanValue);
-    CLLocation *currentLocation = self.location.location;
-    CLLocationCoordinate2D locationCoords = currentLocation.coordinate;
-    self.mapView.region = MKCoordinateRegionMake(locationCoords, MKCoordinateSpanMake(self.spanValue, self.spanValue));
+    CLLocationCoordinate2D mapCenterCoords = self.mapView.centerCoordinate;
+    self.mapView.region = MKCoordinateRegionMake(mapCenterCoords, MKCoordinateSpanMake(self.spanValue, self.spanValue));
 
 }
 
@@ -71,6 +70,12 @@
 
 }
 
+- (IBAction)currentLocationPressed:(UIButton *)sender {//centre location icon from https://i.stack.imgur.com/yFbFB.png resized at http://resizeimage.net
+    CLLocation *currentLocation = self.location.location;
+    CLLocationCoordinate2D userCurrentLocation = currentLocation.coordinate;
+    self.mapView.region = MKCoordinateRegionMake(userCurrentLocation, MKCoordinateSpanMake(self.spanValue, self.spanValue));
+}
+
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(nonnull MKUserLocation *)userLocation{  //method to centre the map on user location with the span value set by the zoom stepper
     NSLog(@"User Location = %f, %f", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
     MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(self.spanValue, self.spanValue));
@@ -78,7 +83,7 @@
 }
 
 -(void) PlotAnnotations {
-    
+    int numberOfPubs = 0;
     for (int i = 0; i < self.data.pubArray.count; i++) { // loop to check whether to display on map or not
         
          NSUserDefaults *switchState = [NSUserDefaults standardUserDefaults];
@@ -90,16 +95,16 @@
         bool Switch = [switchState boolForKey:[NSString stringWithFormat:@"SwitchState %d",i]];
         if (Switch == true) {
             pubCoordinates = CLLocationCoordinate2DMake(temp.latitude, temp.longitude); //set the coordinate of the pin
-            
             MKPointAnnotation *pointAnnotation = [[MKPointAnnotation alloc]init]; //plot the this pin with the following attributes
             pointAnnotation.coordinate = pubCoordinates;
             pointAnnotation.title = temp.name;
-            
             [self.mapView addAnnotation:pointAnnotation];
+            
+            numberOfPubs = numberOfPubs + 1;
         }
         
     }
-    
+    self.numberOfPubsLabel.text = [NSString stringWithFormat:@"Number of pubs = %d", numberOfPubs];
 }
 -(void) ReloadInputViews{ //method to reload the map
     [self.mapView reloadInputViews];
